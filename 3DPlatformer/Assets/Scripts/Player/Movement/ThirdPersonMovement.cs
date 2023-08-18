@@ -21,7 +21,7 @@ public class ThirdPersonMovement : MonoBehaviour
     public float speed = 6f;
     public float normalSpeed = 8f;
     public float runSpeed = 12f;
-    public float dashSpeed = 12f;
+    public float dashSpeed = 100f;
     public float gravity = -9.81f;
     public float jumpPower = 15;
 
@@ -73,9 +73,9 @@ public class ThirdPersonMovement : MonoBehaviour
             }
             else 
             {
-                controller.Move(moveDir.normalized * speed);
-                speed = normalSpeed;
                 isDashing = false;
+                controller.Move(moveDir.normalized * speed);
+                speed = normalSpeed;  
             }
         }
         else
@@ -84,9 +84,9 @@ public class ThirdPersonMovement : MonoBehaviour
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
             if(isDashing)
             {
-                controller.Move(moveDir.normalized * speed);
-                speed = normalSpeed;
                 isDashing = false;
+                controller.Move(moveDir.normalized * speed);
+                speed = normalSpeed;  
             }
         }
 
