@@ -15,10 +15,13 @@ public class ThirdPersonMovement : MonoBehaviour
     public LayerMask ground;
 
     bool isGrounded;
+    bool isDashing;
     bool canDash;
 
     public float speed = 6f;
-    public float dashSpeed = 16f;
+    public float normalSpeed = 8f;
+    public float runSpeed = 12f;
+    public float dashSpeed = 12f;
     public float gravity = -9.81f;
     public float jumpPower = 15;
 
@@ -35,10 +38,22 @@ public class ThirdPersonMovement : MonoBehaviour
             canDash = true;
         }
 
-        if(canDash && Input.GetButtonDown(""))
+        if(Input.GetKeyDown(KeyCode.LeftShift))
         {
-
+            speed = runSpeed;
         }
+        if(Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            speed = normalSpeed;
+        }
+
+        if(Input.GetKeyDown(KeyCode.Q) && canDash)
+        {
+            canDash = false;
+            isDashing = true;
+            speed = dashSpeed;
+        }
+
 
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
@@ -52,7 +67,27 @@ public class ThirdPersonMovement : MonoBehaviour
             transform.rotation = Quaternion.Euler(0f, angle, 0f);
 
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
-            controller.Move(moveDir.normalized * speed * Time.deltaTime);
+            if(!isDashing)
+            {
+                controller.Move(moveDir.normalized * speed * Time.deltaTime);
+            }
+            else 
+            {
+                controller.Move(moveDir.normalized * speed);
+                speed = normalSpeed;
+                isDashing = false;
+            }
+        }
+        else
+        {
+            float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + player.eulerAngles.y;
+            Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
+            if(isDashing)
+            {
+                controller.Move(moveDir.normalized * speed);
+                speed = normalSpeed;
+                isDashing = false;
+            }
         }
 
         if(Input.GetButtonDown("Jump") && isGrounded)
