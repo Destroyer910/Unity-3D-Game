@@ -100,4 +100,10 @@ public class ThirdPersonMovement : MonoBehaviour
 
         controller.Move(velocity * Time.deltaTime);
     }
+
+    public void setNewPosition()
+    {
+        controller.enabled = false;
+        controller.enabled = true;
+    }
 }
