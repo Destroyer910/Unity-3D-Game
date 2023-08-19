@@ -7,6 +7,7 @@ public class ThirdPersonMovement : MonoBehaviour
     public CharacterController controller;
     public Transform cam;
     public Transform player;
+    [SerializeField] private TrailRenderer trail;
 
     Vector3 velocity;
 
@@ -35,7 +36,8 @@ public class ThirdPersonMovement : MonoBehaviour
         if(isGrounded && velocity.y < 0)
         {
             velocity.y = 0;
-            canDash = true;
+            canDash = false;
+            trail.enabled = false;
         }
 
         if(Input.GetKeyDown(KeyCode.LeftShift))
@@ -47,11 +49,19 @@ public class ThirdPersonMovement : MonoBehaviour
             speed = normalSpeed;
         }
 
+        if(Input.GetButtonDown("Jump") && isGrounded)
+        {
+            canDash = true;
+            isGrounded = false;
+            velocity.y = jumpPower;
+        }
+
         if(Input.GetKeyDown(KeyCode.Q) && canDash)
         {
             canDash = false;
             isDashing = true;
             speed = dashSpeed;
+            trail.enabled = true;
         }
 
 
@@ -71,7 +81,7 @@ public class ThirdPersonMovement : MonoBehaviour
             {
                 controller.Move(moveDir.normalized * speed * Time.deltaTime);
             }
-            else 
+            else
             {
                 isDashing = false;
                 controller.Move(moveDir.normalized * speed);
@@ -88,12 +98,6 @@ public class ThirdPersonMovement : MonoBehaviour
                 controller.Move(moveDir.normalized * speed);
                 speed = normalSpeed;  
             }
-        }
-
-        if(Input.GetButtonDown("Jump") && isGrounded)
-        {
-            isGrounded = false;
-            velocity.y = jumpPower;
         }
 
         velocity.y += gravity * Time.deltaTime;
