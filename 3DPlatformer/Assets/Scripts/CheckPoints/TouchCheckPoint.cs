@@ -8,10 +8,20 @@ public class TouchCheckPoint : MonoBehaviour
     [SerializeField] private SpawningSO spawns;
     public GameObject particles;
     private bool canCheckpoint;
+    private Timer timeScript;
+    [SerializeField] private SpawningSO spawnStuff;
     
     void Start()
     {
-      canCheckpoint = true;
+      timeScript = GameObject.Find("TIME").GetComponent<Timer>();
+      if(spawnStuff.spawnName == gameObject.name)
+      {
+        canCheckpoint = false;
+      }
+      else
+      {
+        canCheckpoint = true;
+      }
     }
     void OnTriggerEnter(Collider other)
     {
@@ -19,7 +29,8 @@ public class TouchCheckPoint : MonoBehaviour
       {
         canCheckpoint = false;
         spawns.spawnName = gameObject.name;
-        Instantiate(particles, gameObject.transform); 
+        Instantiate(particles, gameObject.transform);
+        timeScript.touchedCheckPoint(); 
       }  
     }
     
