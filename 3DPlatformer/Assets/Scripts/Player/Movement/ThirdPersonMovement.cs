@@ -17,6 +17,7 @@ public class ThirdPersonMovement : MonoBehaviour
 
     bool isGrounded;
     bool isDashing;
+    bool isRunning = false;
     bool canDash;
 
     public float speed = 6f;
@@ -43,10 +44,12 @@ public class ThirdPersonMovement : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.LeftShift))
         {
             speed = runSpeed;
+            isRunning = true;
         }
         if(Input.GetKeyUp(KeyCode.LeftShift))
         {
             speed = normalSpeed;
+            isRunning = false;
         }
 
         if(Input.GetButtonDown("Jump") && isGrounded)
@@ -85,7 +88,14 @@ public class ThirdPersonMovement : MonoBehaviour
             {
                 isDashing = false;
                 controller.Move(moveDir.normalized * speed);
-                speed = normalSpeed;  
+                if(isRunning)
+                {
+                    speed = runSpeed;
+                }
+                else
+                {
+                    speed = normalSpeed;
+                } 
             }
         }
         else
@@ -96,7 +106,14 @@ public class ThirdPersonMovement : MonoBehaviour
             {
                 isDashing = false;
                 controller.Move(moveDir.normalized * speed);
-                speed = normalSpeed;  
+                if(isRunning)
+                {
+                    speed = runSpeed;
+                } 
+                else
+                {
+                    speed = normalSpeed;
+                }
             }
         }
 

@@ -354,9 +354,13 @@
 "Assets/Scripts/CheckPoints/DeleteParticles.cs"
 "Assets/Scripts/CheckPoints/DontDoParticles.cs"
 "Assets/Scripts/CheckPoints/TouchCheckPoint.cs"
+"Assets/Scripts/DeathButtons/RestartLevel.cs"
+"Assets/Scripts/Player/Death/DeathHealthManager.cs"
+"Assets/Scripts/Player/Death/ExternalDeathCheck.cs"
 "Assets/Scripts/Player/Movement/ThirdPersonMovement.cs"
 "Assets/Scripts/Player/Spawning/Spawning.cs"
 "Assets/Scripts/ScriptableObject/SpawningStuff/SpawningSO.cs"
+"Assets/Scripts/Transitions/StartGameTransition.cs"
 -langversion:9.0
 
 /deterministic
