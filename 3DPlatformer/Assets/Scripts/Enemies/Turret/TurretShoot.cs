@@ -3,16 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TurretShoot : MonoBehaviour
-{
+{   
+
+    [SerializeField] private GameObject bulletThing;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        StartCoroutine(shoot());
     }
 
-    // Update is called once per frame
-    void Update()
+    private IEnumerator shoot()
     {
-        
+        yield return new WaitForSeconds(3f);
+        Instantiate(bulletThing, this.transform);
+        StartCoroutine(shoot());
     }
 }

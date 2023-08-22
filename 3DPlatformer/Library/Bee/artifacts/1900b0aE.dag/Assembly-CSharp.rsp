@@ -355,6 +355,8 @@
 "Assets/Scripts/CheckPoints/DontDoParticles.cs"
 "Assets/Scripts/CheckPoints/TouchCheckPoint.cs"
 "Assets/Scripts/DeathButtons/RestartLevel.cs"
+"Assets/Scripts/Enemies/Turret/TurretGoToTarget.cs"
+"Assets/Scripts/Enemies/Turret/TurretRotator.cs"
 "Assets/Scripts/Enemies/Turret/TurretShoot.cs"
 "Assets/Scripts/Player/Death/DeathHealthManager.cs"
 "Assets/Scripts/Player/Death/ExternalDeathCheck.cs"
