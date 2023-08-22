@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class Destruction : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    public GameObject destroyedVersion;
+    void OnCollisionEnter (Collision collision) {
+        if (collision.gameObject.CompareTag("Player")) {
+            Explode();
+        }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+    void Explode () {
+        Instantiate(destroyedVersion, transform.position, transform.rotation);
+        Destroy(gameObject);
     }
 }
