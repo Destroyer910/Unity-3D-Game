@@ -5,19 +5,22 @@ using UnityEngine;
 public class TurretGoToTarget : MonoBehaviour
 {
     private Transform target;
+    private Vector3 targetPosition;
     [SerializeField] private float speed = 3f;
     
     void Start()
     {
         target = GameObject.Find("TurretTarget").GetComponent<Transform>();
+        targetPosition = new Vector3(target.position.x, target.position.y, target.position.z);
+        transform.SetParent(null);
     }
 
     void Update()
     {
         float stepAmount = speed * Time.deltaTime;
-        transform.position = Vector3.MoveTowards(transform.position, target.position, stepAmount);
+        transform.position = Vector3.MoveTowards(transform.position, targetPosition, stepAmount);
 
-        if(transform.position == target.position)
+        if(transform.position == targetPosition)
         {
             Destroy(gameObject);
         }

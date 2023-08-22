@@ -24,11 +24,31 @@ public class ThirdPersonMovement : MonoBehaviour
     public float normalSpeed = 8f;
     public float runSpeed = 12f;
     public float dashSpeed = 100f;
+    public float originalGravity = -9.81f;
     public float gravity = -9.81f;
     public float jumpPower = 15;
 
     public float turnSmoothTime = 0.1f;
     float turnSmoothVelocity;
+
+    void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("testLog");
+        if(other.gameObject.CompareTag("RunableWall"))
+        {
+            velocity.y = 0;
+            Debug.Log("wow");
+            gravity = -1f;
+        }        
+    }
+    
+    void OnTriggerExit(Collider other)
+    {
+        if(other.gameObject.CompareTag("RunableWall"))
+        {
+            gravity = originalGravity;
+        }
+    }
 
     void Update()
     {

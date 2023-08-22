@@ -7,8 +7,7 @@ public class TurretRotator : MonoBehaviour
 
     [SerializeField] private float rotateSpeedOriginal = 4f;
     private float rotateSpeed = 4f;
-    private float turnSmoothTime = 2f;
-    float turnSmoothVelocity;
+   
 
     // Update is called once per frame
     void Update()
