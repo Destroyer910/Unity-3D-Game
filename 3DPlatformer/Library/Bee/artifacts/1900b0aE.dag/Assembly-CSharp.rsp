@@ -363,6 +363,7 @@
 "Assets/Scripts/Player/Spawning/Spawning.cs"
 "Assets/Scripts/ScriptableObject/SpawningStuff/SpawningSO.cs"
 "Assets/Scripts/ScriptableObject/Time/StartTimeSO.cs"
+"Assets/Scripts/Teleporter/Teleporter.cs"
 "Assets/Scripts/Time/Timer.cs"
 "Assets/Scripts/Transitions/StartGameTransition.cs"
 -langversion:9.0
