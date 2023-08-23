@@ -333,7 +333,7 @@ MonoBehaviour:
     OrthographicSize: 10
     NearClipPlane: 0.1
     FarClipPlane: 5000
-    Dutch: 0
+    Dutch: -0
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
@@ -591,7 +591,7 @@ MonoBehaviour:
     OrthographicSize: 10
     NearClipPlane: 0.1
     FarClipPlane: 5000
-    Dutch: 0
+    Dutch: -0
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
@@ -5526,7 +5526,7 @@ MonoBehaviour:
     OrthographicSize: 10
     NearClipPlane: 0.1
     FarClipPlane: 5000
-    Dutch: 0
+    Dutch: -0
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
@@ -11895,7 +11895,7 @@ MonoBehaviour:
     OrthographicSize: 10
     NearClipPlane: 0.1
     FarClipPlane: 5000
-    Dutch: 0
+    Dutch: -0
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
@@ -13497,10 +13497,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.60267735
+  m_Radius: 0.551569
   m_Height: 2.1155052
   m_Direction: 1
-  m_Center: {x: 0.000726223, y: -0.018977165, z: -0.014537454}
+  m_Center: {x: 0.0005302429, y: -0.018977165, z: -0.0011688471}
 --- !u!96 &2083618077
 TrailRenderer:
   serializedVersion: 2

@@ -31,17 +31,17 @@ public class ThirdPersonMovement : MonoBehaviour
     public float turnSmoothTime = 0.1f;
     float turnSmoothVelocity;
 
+    //Start wallrunning 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("testLog");
         if(other.gameObject.CompareTag("RunableWall"))
         {
             velocity.y = 0;
-            Debug.Log("wow");
             gravity = -1f;
         }        
     }
     
+    //Stop wallrunning 
     void OnTriggerExit(Collider other)
     {
         if(other.gameObject.CompareTag("RunableWall"))
@@ -49,6 +49,27 @@ public class ThirdPersonMovement : MonoBehaviour
             gravity = originalGravity;
         }
     }
+
+    
+    //Get the angle of target object.
+    float AngleDir(Vector3 fwd, Vector3 targetDir, Vector3 up) 
+	{
+		Vector3 perp = Vector3.Cross(fwd, targetDir);
+		float dir = Vector3.Dot(perp, up);
+		
+		if (dir > 0f) 
+		{
+			return 1f;
+		} 
+		else if (dir < 0f) 
+		{
+			return -1f;
+		}
+		else 
+		{
+			return 0f;
+		}
+	}
 
     void Update()
     {
@@ -61,17 +82,20 @@ public class ThirdPersonMovement : MonoBehaviour
             trail.enabled = false;
         }
 
+        //Start running when shift is pressed.
         if(Input.GetKeyDown(KeyCode.LeftShift))
         {
             speed = runSpeed;
             isRunning = true;
         }
+        //Stop running when shift is let go.
         if(Input.GetKeyUp(KeyCode.LeftShift))
         {
             speed = normalSpeed;
             isRunning = false;
         }
 
+        //Jump
         if(Input.GetButtonDown("Jump") && isGrounded)
         {
             canDash = true;
@@ -79,12 +103,13 @@ public class ThirdPersonMovement : MonoBehaviour
             velocity.y = jumpPower;
         }
 
+        //Do the dash.
         if(Input.GetKeyDown(KeyCode.Q) && canDash)
         {
             canDash = false;
             isDashing = true;
-            speed = dashSpeed;
             trail.enabled = true;
+            dash();
         }
 
 
@@ -93,7 +118,7 @@ public class ThirdPersonMovement : MonoBehaviour
         
         Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
 
-        if(direction.magnitude >= 0.1f)
+        if(direction.magnitude >= 0.1f) //If the the player has any of the non jump movement buttons pressed then do the movment math.
         {
             float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
             float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
@@ -104,47 +129,43 @@ public class ThirdPersonMovement : MonoBehaviour
             {
                 controller.Move(moveDir.normalized * speed * Time.deltaTime);
             }
-            else
-            {
-                isDashing = false;
-                controller.Move(moveDir.normalized * speed);
-                if(isRunning)
-                {
-                    speed = runSpeed;
-                }
-                else
-                {
-                    speed = normalSpeed;
-                } 
-            }
+            
         }
-        else
-        {
-            float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + player.eulerAngles.y;
-            Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
-            if(isDashing)
-            {
-                isDashing = false;
-                controller.Move(moveDir.normalized * speed);
-                if(isRunning)
-                {
-                    speed = runSpeed;
-                } 
-                else
-                {
-                    speed = normalSpeed;
-                }
-            }
-        }
-
+        
+        //Gravity.
         velocity.y += gravity * Time.deltaTime;
 
+        //Do the vertical movement.
         controller.Move(velocity * Time.deltaTime);
     }
 
+    //Disable and enable the controller to allow for the position of the controller to be updated because character controller is weird :(
     public void setNewPosition()
     {
         controller.enabled = false;
         controller.enabled = true;
+    }
+
+    public void dash()
+    {
+        //Calculate the move direction
+        float horizontal = Input.GetAxisRaw("Horizontal");
+        float vertical = Input.GetAxisRaw("Vertical");
+        Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
+        float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
+        Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
+
+        isDashing = false;
+
+        //Do the actual dash.
+        controller.Move(moveDir.normalized * speed);
+        if(isRunning)
+        {
+            speed = runSpeed;
+        }
+        else
+        {
+            speed = normalSpeed;
+        } 
     }
 }
