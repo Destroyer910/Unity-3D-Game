@@ -360,6 +360,7 @@
 "Assets/Scripts/Enemies/Turret/TurretShoot.cs"
 "Assets/Scripts/Player/Death/DeathHealthManager.cs"
 "Assets/Scripts/Player/Death/ExternalDeathCheck.cs"
+"Assets/Scripts/Player/Movement/RotateCamWallRun.cs"
 "Assets/Scripts/Player/Movement/ThirdPersonMovement.cs"
 "Assets/Scripts/Player/Spawning/Spawning.cs"
 "Assets/Scripts/ScriptableObject/SpawningStuff/SpawningSO.cs"
