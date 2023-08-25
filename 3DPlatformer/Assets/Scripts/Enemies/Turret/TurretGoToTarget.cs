@@ -10,7 +10,8 @@ public class TurretGoToTarget : MonoBehaviour
     
     void Start()
     {
-        target = GameObject.Find("TurretTarget").GetComponent<Transform>();
+        //Grabs the child object of the parent of this object which would be the target location for this bullet.
+        target = transform.parent.gameObject.transform.GetChild(0).gameObject.GetComponent<Transform>();
         targetPosition = new Vector3(target.position.x, target.position.y, target.position.z);
         transform.SetParent(null);
     }
