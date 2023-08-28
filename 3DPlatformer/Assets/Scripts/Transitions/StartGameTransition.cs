@@ -9,6 +9,8 @@ public class StartGameTransition : MonoBehaviour
     {
         startTransition.SetActive(true);
         StartCoroutine(disableQuick());
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     private IEnumerator disableQuick()

@@ -30,6 +30,9 @@ public class TurretGoToTarget : MonoBehaviour
 
     void OnCollisionEnter(Collision other)
     {
-        Destroy(gameObject);
+        if(!other.gameObject.CompareTag("Turret"))
+        {
+            Destroy(gameObject);
+        }
     }
 }

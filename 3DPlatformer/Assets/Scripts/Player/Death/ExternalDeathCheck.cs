@@ -20,5 +20,7 @@ public class ExternalDeathCheck : MonoBehaviour
     {
         yield return new WaitForSeconds(1f);
         deathScreen.SetActive(true);
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
     }
 }

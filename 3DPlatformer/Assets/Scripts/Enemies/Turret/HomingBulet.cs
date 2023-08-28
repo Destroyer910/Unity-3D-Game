@@ -29,8 +29,12 @@ public class HomingBulet : MonoBehaviour
 
     void OnCollisionEnter(Collision other)
     {
-        Debug.Log("Test");
-        Destroy(gameObject);
+
+        if(!other.gameObject.CompareTag("Turret"))
+        {
+            Debug.Log("Test");
+            Destroy(gameObject);
+        }
     }
     
 }
