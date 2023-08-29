@@ -19,6 +19,7 @@ public class ThirdPersonMovement : MonoBehaviour
     bool isDashing;
     bool isRunning = false;
     bool canDash;
+    bool canMove = true;
 
     public float speed = 6f;
     public float normalSpeed = 8f;
@@ -27,6 +28,7 @@ public class ThirdPersonMovement : MonoBehaviour
     public float originalGravity = -9.81f;
     public float gravity = -9.81f;
     public float jumpPower = 15;
+    private Vector3 tempVelo;
 
     public float turnSmoothTime = 0.1f;
     float turnSmoothVelocity;
@@ -73,6 +75,8 @@ public class ThirdPersonMovement : MonoBehaviour
 
     void Update()
     {
+        
+        Debug.Log("x: " + velocity.x + " y: " + velocity.y + " z: " + velocity.z );
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, ground);
 
         if(isGrounded && velocity.y < 0)
@@ -96,7 +100,7 @@ public class ThirdPersonMovement : MonoBehaviour
         }
 
         //Jump
-        if(Input.GetButtonDown("Jump") && isGrounded)
+        if(Input.GetButtonDown("Jump") && isGrounded && canMove)
         {
             canDash = true;
             isGrounded = false;
@@ -104,7 +108,7 @@ public class ThirdPersonMovement : MonoBehaviour
         }
 
         //Do the dash.
-        if(Input.GetKeyDown(KeyCode.Q) && canDash)
+        if(Input.GetKeyDown(KeyCode.Q) && canDash && canMove)
         {
             canDash = false;
             isDashing = true;
@@ -118,7 +122,7 @@ public class ThirdPersonMovement : MonoBehaviour
         
         Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
 
-        if(direction.magnitude >= 0.1f) //If the the player has any of the non jump movement buttons pressed then do the movment math.
+        if(direction.magnitude >= 0.1f && canMove) //If the the player has any of the non jump movement buttons pressed then do the movment math.
         {
             float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
             float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
@@ -132,11 +136,14 @@ public class ThirdPersonMovement : MonoBehaviour
             
         }
         
-        //Gravity.
-        velocity.y += gravity * Time.deltaTime;
+        if(canMove)
+        {
+            //Gravity.
+            velocity.y += gravity * Time.deltaTime;
 
-        //Do the vertical movement.
-        controller.Move(velocity * Time.deltaTime);
+            //Do the vertical movement.
+            controller.Move(velocity * Time.deltaTime);
+        }
     }
 
     //Disable and enable the controller to allow for the position of the controller to be updated because character controller is weird :(
@@ -168,4 +175,5 @@ public class ThirdPersonMovement : MonoBehaviour
             speed = normalSpeed;
         } 
     }
+
 }
