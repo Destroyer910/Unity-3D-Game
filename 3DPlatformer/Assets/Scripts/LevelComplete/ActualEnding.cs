@@ -17,7 +17,11 @@ public class ActualEnding : MonoBehaviour
     //When the player interacts with the end level object run the stuff :P
     void OnTriggerEnter(Collider other)
     {
-        timeScript.STOPTHETIMER();
+        if(other.gameObject.name == "Third Person Player")
+        {
+            timeScript.STOPTHETIMER();
+            StartCoroutine(endLevelStuff());
+        }
     }
 
     //The ACTUAL end level stuff :O
@@ -25,7 +29,7 @@ public class ActualEnding : MonoBehaviour
     {
         endTransition.SetActive(true);
         yield return new WaitForSeconds(2f);
-        previousLevel.previousLevel = SceneManager.GetActiveScene().ToString();
+        previousLevel.previousLevel = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene("LevelEnd");
     }
 }
