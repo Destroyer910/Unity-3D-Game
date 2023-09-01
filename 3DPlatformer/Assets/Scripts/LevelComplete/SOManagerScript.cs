@@ -8,30 +8,54 @@ public class SOManagerScript : MonoBehaviour
 
     public void updateSampleScene(float time, string rank)
     {
-        sampleScene.levelTime = time;
-        sampleScene.levelRank = rank;
+        if(time < sampleScene.levelTime)
+        {
+            sampleScene.levelTime = time;
+            sampleScene.levelRank = rank;
+        }
     }
     public string returnSampleSceneRank(float time)
     {
         if(time <= sampleScene.platReq)
         {
-            return "Platinum";
+            return "Hermes Himself";
         }
         else if(time <= sampleScene.goldReq)
         {
-            return "Gold";
+            return "Post Master General";
         }
         else if(time <= sampleScene.silverReq)
         {
-            return "Silver";
+            return "Post Man";
         }
         else if(time <= sampleScene.bronzeReq)
         {
-            return "Bronze";
+            return "Paper Boy";
         }
         else
         {
-            return "Unranked";
+            return "Your Fired!";
         }
+    }
+
+    public float returnRankReqSampleScene(string rank)
+    {
+        if(rank == "plat")
+        {
+            return sampleScene.platReq;
+        }
+        else if(rank == "gold")
+        {
+            return sampleScene.goldReq;
+        }
+        else if(rank == "silver")
+        {
+            return sampleScene.silverReq;
+        }
+        else
+        {
+            return sampleScene.bronzeReq;
+        }
+
     }
 }
