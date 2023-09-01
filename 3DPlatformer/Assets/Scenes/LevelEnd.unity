@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1030,5 +1030,6 @@ MonoBehaviour:
   managerScript: {fileID: 1623687814}
   previousLevel: {fileID: 11400000, guid: f87b2248c489cf046972d815e529aaf1, type: 2}
   startTime: {fileID: 11400000, guid: 2c884546671d32d4b88d8bcb658a745b, type: 2}
+  spawn: {fileID: 11400000, guid: 62d84943cd4731a4e97b299c44d5ea52, type: 2}
   levelRank: {fileID: 52568079}
   levelTime: {fileID: 272269371}

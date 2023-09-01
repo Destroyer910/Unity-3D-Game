@@ -10,6 +10,7 @@ public class ImmediateUpdater : MonoBehaviour
     [SerializeField] private SOManagerScript managerScript;
     [SerializeField] private PreviousLevelSO previousLevel;
     [SerializeField] private StartTimeSO startTime;
+    [SerializeField] private SpawningSO spawn;
 
     public TextMeshProUGUI levelRank;
     public TextMeshProUGUI levelTime;
@@ -25,6 +26,7 @@ public class ImmediateUpdater : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        spawn.spawnName = "StartSpawn";
         levelRank.text = "Hermes Himself";
         targetTime = startTime.time;
         if(previousLevel.previousLevel == "SampleScene")
@@ -45,6 +47,7 @@ public class ImmediateUpdater : MonoBehaviour
             if((currentTime + Time.deltaTime * 10) >= targetTime)
             {
                 currentTime = targetTime;
+                startTime.time = 0;
             }
             else
             {

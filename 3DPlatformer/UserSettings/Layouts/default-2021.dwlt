@@ -145,7 +145,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 26
+  controlID: 16
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 27
+  controlID: 17
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -195,7 +195,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 28
+  controlID: 18
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -372,9 +372,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 56600000
+      m_SelectedIDs: 867b0000
       m_LastClickedID: 0
-      m_ExpandedIDs: 58d7ffffe6dffffff6e1ffff3ee8fffff0ecffff12f9ffff18faffff806000009a600000
+      m_ExpandedIDs: bae6ffff64e7ffff16faffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -877,14 +877,14 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Scenes
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\logan\Documents\Unity-3D-Game\3DPlatformer
+  m_LastProjectPath: C:\Users\5926001686\Documents\Unity-3D-Game\3DPlatformer
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 66}
-    m_SelectedIDs: 46600000
-    m_LastClickedID: 24646
-    m_ExpandedIDs: 000000003a60000048600000d0600000dc60000000ca9a3b
+    m_SelectedIDs: 4a600000
+    m_LastClickedID: 24650
+    m_ExpandedIDs: 000000003e6000004c600000846000008a60000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -912,7 +912,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000003a600000
+    m_ExpandedIDs: 000000003e600000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
