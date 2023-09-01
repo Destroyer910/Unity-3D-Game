@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEditor.UI;
 using UnityEngine;
 
-public class FloatingText : MonoBehaviour
+public class FaceCamera : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
