@@ -35,6 +35,16 @@ public class Timer : MonoBehaviour
         time.time = currentTime;
     }
 
+    public void pauseTheTimer()
+    {
+        timerGoing = false;
+    }
+
+    public void unpauseTheTimer()
+    {
+        timerGoing = true;
+    }
+
     public void touchedCheckPoint()
     {
         time.time = currentTime;
