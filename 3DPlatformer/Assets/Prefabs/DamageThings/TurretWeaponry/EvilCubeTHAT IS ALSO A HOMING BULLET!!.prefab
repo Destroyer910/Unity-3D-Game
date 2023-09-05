@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1058199446124833337}
   - component: {fileID: 8204094138659236635}
   - component: {fileID: -675658440452752899}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EvilCubeTHAT IS ALSO A HOMING BULLET!!
   m_TagString: Damage
   m_Icon: {fileID: 0}

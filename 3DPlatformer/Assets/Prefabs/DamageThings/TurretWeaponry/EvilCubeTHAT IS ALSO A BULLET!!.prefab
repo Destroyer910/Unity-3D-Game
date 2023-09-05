@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4809561231967501058}
   - component: {fileID: -235859971503643555}
   - component: {fileID: -6935664330851526087}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EvilCubeTHAT IS ALSO A BULLET!!
   m_TagString: Damage
   m_Icon: {fileID: 0}
