@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6684cbab6c7fbd48a70c6c50bb91c85, type: 3}
   m_Name: SampleLevel
   m_EditorClassIdentifier: 
-  levelTime: 5.2573934
-  levelRank: Hermes Himself
+  levelTime: 31
+  levelRank: Paper Boy
   bronzeReq: 40
   silverReq: 30
   goldReq: 20

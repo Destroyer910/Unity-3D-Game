@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731713, g: 0.13414738, b: 0.121078536, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731713, g: 0.13414736, b: 0.12107852, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5721,7 +5721,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 274180439}
-  m_LocalRotation: {x: -0.012461888, y: 9.3125035e-10, z: 1.1606038e-11, w: 0.9999224}
+  m_LocalRotation: {x: -0.012461889, y: -5.5502535e-17, z: -2.2509096e-18, w: 0.9999224}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -12395,6 +12395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cb94f6783ad796499770c38f9228d30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startTransition: {fileID: 1605844289}
 --- !u!114 &1472506874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12407,6 +12408,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7f9f2934d93be84a99531a729ac4a41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 2083618072}
+  deathScreen: {fileID: 979249561}
 --- !u!114 &1472506875
 MonoBehaviour:
   m_ObjectHideFlags: 0

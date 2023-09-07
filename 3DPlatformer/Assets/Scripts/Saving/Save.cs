@@ -1,31 +1,42 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.IO;
 
 public class Save : MonoBehaviour
 {
-    public void saveTutorial()
+
+    [SerializeField] private IndividualLevelsSO tutorial;
+
+    private string directory;
+    
+    private void Start() {
+        directory = Application.dataPath + "/Save.txt";
+    }
+
+    public void save()
     {
+        File.WriteAllText
+        (
+            directory,
+            tutorial.levelTime.ToString()
+        );
 
     }
-    public void saveLevel1()
-    {
 
-    }
-    public void saveLevel2()
+    public void load()
     {
+        StreamReader reader = new StreamReader(directory);
+        string text = reader.ReadToEnd();
 
-    }
-    public void saveLevel3()
-    {
+        reader.Close();
 
-    }
-    public void saveLevel4()
-    {
-
-    }
-    public void saveLevel5()
-    {
+        string[] lines = text.Split('\n');
         
+        Debug.Log("LOAD");
+        //load the tutorial stats to the SO
+        tutorial.levelTime = float.Parse(lines[0]);
+        tutorial.findRank();
     }
+    
 }

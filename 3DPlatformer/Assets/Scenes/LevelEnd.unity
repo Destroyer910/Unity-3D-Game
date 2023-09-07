@@ -574,6 +574,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1623687817}
+        m_TargetAssemblyTypeName: Save, Assembly-CSharp
+        m_MethodName: save
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 694432663}
         m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
         m_MethodName: changeSceneToPostOffice
@@ -1398,6 +1410,7 @@ GameObject:
   - component: {fileID: 1623687815}
   - component: {fileID: 1623687814}
   - component: {fileID: 1623687816}
+  - component: {fileID: 1623687817}
   m_Layer: 0
   m_Name: SOManager
   m_TagString: Untagged
@@ -1451,6 +1464,19 @@ MonoBehaviour:
   spawn: {fileID: 11400000, guid: 62d84943cd4731a4e97b299c44d5ea52, type: 2}
   levelRank: {fileID: 52568079}
   levelTime: {fileID: 272269371}
+--- !u!114 &1623687817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623687813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73ff350a3f5d3ea4da0ab39eef1932a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tutorial: {fileID: 11400000, guid: 32b2a36648686844db0d71392abbfbfc, type: 2}
 --- !u!1 &2035864649
 GameObject:
   m_ObjectHideFlags: 0

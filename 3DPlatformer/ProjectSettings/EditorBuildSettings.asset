@@ -5,9 +5,15 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/StartMenu.unity
+    guid: 4a19d2a92c15c3f42901ff26bfb90d1d
   - enabled: 1
     path: Assets/Scenes/PostOffice.unity
-    guid: cf1dc40d16c220640b2834648156f19d
+    guid: 5b7ab3ee000dd53409c82556b4fc8084
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
