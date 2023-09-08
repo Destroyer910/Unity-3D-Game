@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6656932451176331340}
   - component: {fileID: 6656932451176331338}
-  - component: {fileID: 6656932451176331341}
+  - component: {fileID: 1463249821}
   m_Layer: 0
   m_Name: TutorialPrompt
   m_TagString: Untagged
@@ -46,8 +46,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Text: Use WASD to move and Mouse to look around
---- !u!135 &6656932451176331341
-SphereCollider:
+--- !u!65 &1463249821
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -57,5 +57,5 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 2.88
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 16.310793, y: 7.2536535, z: 1.7050381}
+  m_Center: {x: -0.8950033, y: 0.81453085, z: -0.35251904}
