@@ -370,6 +370,7 @@
 "Assets/Scripts/LevelComplete/SOManagerScript.cs"
 "Assets/Scripts/PauseMenuStuffffff/EnableMenu.cs"
 "Assets/Scripts/PauseMenuStuffffff/OpenAndClosePauseMenu.cs"
+"Assets/Scripts/PauseMenuStuffffff/OpenAndClosePauseMenuInHub.cs"
 "Assets/Scripts/Player/Death/DeathHealthManager.cs"
 "Assets/Scripts/Player/Death/ExternalDeathCheck.cs"
 "Assets/Scripts/Player/Movement/RotateCamWallRun.cs"
