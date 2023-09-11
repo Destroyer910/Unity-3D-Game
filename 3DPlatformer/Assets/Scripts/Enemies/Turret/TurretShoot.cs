@@ -6,6 +6,7 @@ public class TurretShoot : MonoBehaviour
 {   
 
     [SerializeField] private GameObject bulletThing;
+    public float Second_Delay;
 
     // Start is called before the first frame update
     void Start()
@@ -15,7 +16,7 @@ public class TurretShoot : MonoBehaviour
 
     private IEnumerator shoot()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(Second_Delay);
         Instantiate(bulletThing, this.transform);
         StartCoroutine(shoot());
     }
