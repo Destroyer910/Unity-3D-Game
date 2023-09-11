@@ -7,6 +7,7 @@ public class HomingBulet : MonoBehaviour
     private Transform target;
     private Vector3 targetPosition;
     [SerializeField] private float speed = 3f;
+    private bool isChasing = true;
     
     void Start()
     {
@@ -16,7 +17,11 @@ public class HomingBulet : MonoBehaviour
 
     void Update()
     {
-        targetPosition = target.transform.position;
+        if(isChasing)
+        {
+            targetPosition = target.transform.position;
+        }
+        
         float stepAmount = speed * Time.deltaTime;
         transform.position = Vector3.MoveTowards(transform.position, targetPosition, stepAmount);
 
@@ -35,6 +40,20 @@ public class HomingBulet : MonoBehaviour
             Debug.Log("Test");
             Destroy(gameObject);
         }
+    }
+
+    private void OnTriggerEnter(Collider other) 
+    {
+        if(other.gameObject.CompareTag("Player"))
+        {
+            Debug.Log("Trigger");
+            Invoke("stopChasing", 1f);
+        }    
+    }
+
+    private void stopChasing()
+    {
+        isChasing = false;
     }
     
 }
