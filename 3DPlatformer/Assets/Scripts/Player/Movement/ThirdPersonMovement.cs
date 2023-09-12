@@ -12,7 +12,7 @@ public class ThirdPersonMovement : MonoBehaviour
     Vector3 velocity;
 
     public Transform groundCheck;
-    public float groundDistance = 0.4f;
+    public float groundDistance = 0.6f;
     public LayerMask ground;
 
     bool isGrounded;
