@@ -466,7 +466,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FloatingTextPrefab: {fileID: 9091333583104928243, guid: 5ede52ddb3aba944f8f2d9417849738a, type: 3}
-  SceneToLoad: SampleScene
+  SceneToLoad: Level1
 --- !u!23 &130699830
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5752,7 +5752,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 274180439}
-  m_LocalRotation: {x: -0.0124618905, y: -2.7751266e-16, z: -4.3156535e-18, w: 0.9999224}
+  m_LocalRotation: {x: -0.012461889, y: -5.5502535e-17, z: -2.2509096e-18, w: 0.9999224}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -12129,7 +12129,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1096588178}
-  m_LocalRotation: {x: 0.023868466, y: 0.0000000010750922, z: -2.5668112e-11, w: 0.99971515}
+  m_LocalRotation: {x: 0.023868466, y: -0.0000000010750927, z: 2.5668124e-11, w: 0.99971515}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -12877,7 +12877,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 1152}
+  m_AnchoredPosition: {x: 0, y: -6.2}
   m_SizeDelta: {x: 178.87, y: 219.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1605844291
@@ -15045,6 +15045,7 @@ GameObject:
   - component: {fileID: 4725046871195245853}
   - component: {fileID: 4725046871195245826}
   - component: {fileID: 4725046871195245827}
+  - component: {fileID: 4725046871195245854}
   m_Layer: 5
   m_Name: YesButton
   m_TagString: Untagged
@@ -15125,7 +15126,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4725046871195245826}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4725046871195245854}
+        m_TargetAssemblyTypeName: ChangeToAnyScene, Assembly-CSharp
+        m_MethodName: changeScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: StartMenu
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &4725046871195245853
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15134,6 +15147,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4725046871195245825}
   m_CullTransparentMesh: 1
+--- !u!114 &4725046871195245854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4725046871195245825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26efc75f7d602134ba2ef763886fbfbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!222 &4725046871411668105
 CanvasRenderer:
   m_ObjectHideFlags: 0

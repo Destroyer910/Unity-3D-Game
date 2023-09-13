@@ -1430,7 +1430,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe64930bedeb79a458821d1c2e22b186, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sampleScene: {fileID: 11400000, guid: 32b2a36648686844db0d71392abbfbfc, type: 2}
+  level1: {fileID: 11400000, guid: e53ad60ce44d93b46b3471679c1b2567, type: 2}
 --- !u!4 &1623687815
 Transform:
   m_ObjectHideFlags: 0
@@ -1476,7 +1476,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73ff350a3f5d3ea4da0ab39eef1932a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tutorial: {fileID: 11400000, guid: 32b2a36648686844db0d71392abbfbfc, type: 2}
+  level1: {fileID: 11400000, guid: e53ad60ce44d93b46b3471679c1b2567, type: 2}
 --- !u!1 &2035864649
 GameObject:
   m_ObjectHideFlags: 0

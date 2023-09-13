@@ -6,7 +6,7 @@ using System.IO;
 public class Save : MonoBehaviour
 {
 
-    [SerializeField] private IndividualLevelsSO tutorial;
+    [SerializeField] private IndividualLevelsSO level1;
 
     private string directory;
     
@@ -19,7 +19,7 @@ public class Save : MonoBehaviour
         File.WriteAllText
         (
             directory,
-            tutorial.levelTime.ToString()
+            level1.levelTime.ToString()
         );
 
     }
@@ -35,8 +35,8 @@ public class Save : MonoBehaviour
         
         Debug.Log("LOAD");
         //load the tutorial stats to the SO
-        tutorial.levelTime = float.Parse(lines[0]);
-        tutorial.findRank();
+        level1.levelTime = float.Parse(lines[0]);
+        level1.findRank();
     }
     
 }

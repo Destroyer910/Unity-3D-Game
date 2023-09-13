@@ -1,0 +1,409 @@
+{ "pid": 0, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "BeeDriver" } },
+{ "pid": 0, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-2" } },
+{ "pid": 0, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
+{ "pid": 0, "tid": 1, "ts": 1694625302452604, "dur": 323431, "ph": "X", "name": "Build Player", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1694625302452861, "dur": 13924, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1694625302466787, "dur": 295573, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1694625302762361, "dur": 13674, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1694625302776635, "dur": 8, "ph": "X", "name": "", "args": {} },
+{ "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
+,{ "pid":12345, "tid":0, "ts":1694625302501706, "dur":1183, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1694625302502901, "dur":165, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1694625302503110, "dur":20, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1694625302503130, "dur":255, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1694625302503427, "dur":673, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1694625302504100, "dur":1, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1694625302743003, "dur":132, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1694625302743135, "dur":25, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1694625302743160, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1694625302743164, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1694625302743171, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1694625302743172, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1694625302743178, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1694625302743179, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1694625302743184, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1694625302743187, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1694625302743192, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1694625302743194, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1694625302743200, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1694625302743227, "dur":2, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1694625302743271, "dur":1466, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1694625302504014, "dur":92, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1694625302504106, "dur":5532, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1694625302509645, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1694625302509647, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1694625302509711, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1694625302509713, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1694625302509764, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1694625302509809, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1694625302509854, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":1, "ts":1694625302509899, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1694625302509941, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":1, "ts":1694625302509996, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1694625302510039, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":1, "ts":1694625302510104, "dur":73, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1694625302510178, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1694625302510237, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1694625302510281, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1694625302510324, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1694625302510366, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1694625302510412, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1694625302510454, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1694625302510496, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1694625302510537, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1694625302510586, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1694625302510625, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1694625302510664, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1694625302510722, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1694625302510770, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1694625302510818, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1694625302510859, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1694625302510905, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1694625302510955, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1694625302510997, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1694625302511039, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1694625302511078, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1694625302511117, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1694625302511155, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1694625302511194, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1694625302511233, "dur":124, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1694625302511357, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1694625302511416, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1694625302511460, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1694625302511502, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1694625302511546, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1694625302511588, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":1, "ts":1694625302511631, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1694625302511676, "dur":165748, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":1, "ts":1694625302677425, "dur":102, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1694625302677529, "dur":65473, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1694625302504257, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1694625302504257, "dur":5428, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1694625302509685, "dur":104, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1694625302509789, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1694625302509838, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1694625302509887, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1694625302509939, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":2, "ts":1694625302509995, "dur":105, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1694625302510100, "dur":91, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":2, "ts":1694625302510192, "dur":119, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1694625302510312, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1694625302510361, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1694625302510406, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1694625302510448, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1694625302510491, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1694625302510538, "dur":73, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1694625302510612, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1694625302510663, "dur":906, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1694625302511569, "dur":81948, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":2, "ts":1694625302593518, "dur":77, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1694625302593597, "dur":716, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":2, "ts":1694625302594314, "dur":57, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1694625302594372, "dur":66749, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":2, "ts":1694625302661122, "dur":57, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1694625302661181, "dur":81825, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1694625302504128, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1694625302504128, "dur":5513, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1694625302509645, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":3, "ts":1694625302509718, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1694625302509773, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":3, "ts":1694625302509824, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1694625302509867, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":3, "ts":1694625302509915, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1694625302509963, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":3, "ts":1694625302510009, "dur":91, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1694625302510101, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1694625302510161, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1694625302510212, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1694625302510257, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1694625302510303, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1694625302510350, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1694625302510395, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1694625302510439, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1694625302510483, "dur":104646, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":3, "ts":1694625302615130, "dur":72, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1694625302615204, "dur":716, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":3, "ts":1694625302615921, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1694625302615977, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":3, "ts":1694625302616020, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1694625302616065, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":3, "ts":1694625302616105, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1694625302616146, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":3, "ts":1694625302616186, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1694625302616226, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":3, "ts":1694625302616266, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1694625302616305, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":3, "ts":1694625302616343, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1694625302616382, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":3, "ts":1694625302616421, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1694625302616468, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":3, "ts":1694625302616508, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1694625302616546, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":3, "ts":1694625302616583, "dur":37, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1694625302616620, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":3, "ts":1694625302616659, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1694625302616701, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":3, "ts":1694625302616737, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1694625302616780, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":3, "ts":1694625302616817, "dur":35, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1694625302616852, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":3, "ts":1694625302616888, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1694625302616926, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":3, "ts":1694625302616962, "dur":37, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1694625302616999, "dur":372, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":3, "ts":1694625302617371, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1694625302617414, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":3, "ts":1694625302617461, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1694625302617501, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":3, "ts":1694625302617538, "dur":35, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1694625302617574, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":3, "ts":1694625302617611, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1694625302617649, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":3, "ts":1694625302617688, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1694625302617724, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":3, "ts":1694625302617761, "dur":37, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1694625302617798, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":3, "ts":1694625302617836, "dur":34, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1694625302617871, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":3, "ts":1694625302617907, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1694625302617944, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":3, "ts":1694625302617979, "dur":35, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1694625302618015, "dur":124876, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/Cinemachine.dll" }}
+,{ "pid":12345, "tid":3, "ts":1694625302742892, "dur":69, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1694625302742965, "dur":0, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":3, "ts":1694625302742965, "dur":1, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1694625302504368, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1694625302504369, "dur":5312, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1694625302509685, "dur":107, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1694625302509792, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1694625302509841, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":4, "ts":1694625302509891, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1694625302509951, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":4, "ts":1694625302509999, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1694625302510044, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer.exe" }}
+,{ "pid":12345, "tid":4, "ts":1694625302510105, "dur":82, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1694625302510187, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1694625302510238, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1694625302510284, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1694625302510330, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1694625302510374, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1694625302510418, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1694625302510460, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1694625302510501, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1694625302510542, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1694625302510591, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1694625302510631, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1694625302510673, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1694625302510725, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1694625302510775, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1694625302510824, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1694625302510866, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1694625302510909, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1694625302510953, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1694625302511000, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1694625302511041, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1694625302511086, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1694625302511125, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1694625302511165, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":4, "ts":1694625302511204, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1694625302511243, "dur":129, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1694625302511372, "dur":57, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1694625302511430, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1694625302511475, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1694625302511518, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1694625302511566, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1694625302511609, "dur":65285, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":4, "ts":1694625302576894, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1694625302576956, "dur":24021, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":4, "ts":1694625302600978, "dur":83, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1694625302601063, "dur":2031, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":4, "ts":1694625302603094, "dur":59, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1694625302603155, "dur":674, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":4, "ts":1694625302603829, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1694625302603892, "dur":46290, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":4, "ts":1694625302650182, "dur":198, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1694625302650381, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/level0" }}
+,{ "pid":12345, "tid":4, "ts":1694625302650437, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1694625302650442, "dur":825, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/level0" }}
+,{ "pid":12345, "tid":4, "ts":1694625302651310, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":4, "ts":1694625302651410, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1694625302651416, "dur":954, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":4, "ts":1694625302652410, "dur":90599, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1694625302504465, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1694625302504466, "dur":5216, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1694625302509683, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":5, "ts":1694625302509750, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1694625302509801, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":5, "ts":1694625302509859, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1694625302509904, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":5, "ts":1694625302509949, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1694625302509996, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":5, "ts":1694625302510054, "dur":140, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1694625302510195, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1694625302510253, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1694625302510300, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1694625302510348, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1694625302510395, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1694625302510438, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1694625302510481, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1694625302510521, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1694625302510564, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1694625302510604, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1694625302510643, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1694625302510685, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1694625302510731, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1694625302510775, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1694625302510822, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1694625302510864, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1694625302510906, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1694625302510952, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1694625302510999, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1694625302511040, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1694625302511080, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1694625302511119, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1694625302511158, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1694625302511196, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1694625302511234, "dur":107, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1694625302511341, "dur":61, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1694625302511403, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1694625302511449, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1694625302511491, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1694625302511532, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1694625302511573, "dur":65971, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":5, "ts":1694625302577545, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1694625302577604, "dur":43423, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":5, "ts":1694625302621028, "dur":61, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1694625302621091, "dur":70936, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":5, "ts":1694625302692027, "dur":66, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1694625302692096, "dur":50904, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1694625302504494, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1694625302504495, "dur":5185, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1694625302509681, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":6, "ts":1694625302509753, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1694625302509804, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":6, "ts":1694625302509850, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1694625302509895, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":6, "ts":1694625302509939, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1694625302509981, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":6, "ts":1694625302510035, "dur":69, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1694625302510105, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1694625302510181, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1694625302510232, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1694625302510276, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1694625302510319, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1694625302510363, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1694625302510405, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1694625302510445, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1694625302510488, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1694625302510528, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1694625302510589, "dur":134, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1694625302510723, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1694625302510768, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1694625302510812, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1694625302510851, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1694625302510889, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1694625302510928, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1694625302510969, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1694625302511009, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1694625302511047, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1694625302511087, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1694625302511126, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1694625302511166, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1694625302511204, "dur":101, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1694625302511306, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1694625302511346, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1694625302511384, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1694625302511422, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1694625302511463, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1694625302511504, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1694625302511544, "dur":47689, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":6, "ts":1694625302559234, "dur":77, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1694625302559313, "dur":2091, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":6, "ts":1694625302561405, "dur":73, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1694625302561480, "dur":40365, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":6, "ts":1694625302601846, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1694625302601912, "dur":633, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":6, "ts":1694625302602545, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1694625302602609, "dur":23800, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":6, "ts":1694625302626410, "dur":77, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1694625302626489, "dur":197, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":6, "ts":1694625302626687, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1694625302626737, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":6, "ts":1694625302626789, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1694625302627786, "dur":2705, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":6, "ts":1694625302630542, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/sharedassets5.assets" }}
+,{ "pid":12345, "tid":6, "ts":1694625302630606, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1694625302630613, "dur":825, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/sharedassets5.assets" }}
+,{ "pid":12345, "tid":6, "ts":1694625302631478, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/sharedassets4.assets" }}
+,{ "pid":12345, "tid":6, "ts":1694625302631520, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1694625302631526, "dur":805, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/sharedassets4.assets" }}
+,{ "pid":12345, "tid":6, "ts":1694625302632372, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/sharedassets3.assets" }}
+,{ "pid":12345, "tid":6, "ts":1694625302632415, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1694625302632421, "dur":751, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/sharedassets3.assets" }}
+,{ "pid":12345, "tid":6, "ts":1694625302633209, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/sharedassets2.assets.resS" }}
+,{ "pid":12345, "tid":6, "ts":1694625302633249, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1694625302633254, "dur":984, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/sharedassets2.assets.resS" }}
+,{ "pid":12345, "tid":6, "ts":1694625302634278, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":6, "ts":1694625302634335, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1694625302634341, "dur":777, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":6, "ts":1694625302635159, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":6, "ts":1694625302635202, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1694625302635207, "dur":793, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":6, "ts":1694625302636037, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":6, "ts":1694625302636078, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1694625302636084, "dur":1122, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":6, "ts":1694625302637247, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":6, "ts":1694625302637290, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1694625302637295, "dur":954, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":6, "ts":1694625302638290, "dur":212, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":6, "ts":1694625302638502, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1694625302638555, "dur":808, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":6, "ts":1694625302639363, "dur":55, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1694625302639419, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":6, "ts":1694625302639468, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1694625302639475, "dur":951, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":6, "ts":1694625302640469, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/resources.assets" }}
+,{ "pid":12345, "tid":6, "ts":1694625302640514, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1694625302640520, "dur":757, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/resources.assets" }}
+,{ "pid":12345, "tid":6, "ts":1694625302641315, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/level5.resS" }}
+,{ "pid":12345, "tid":6, "ts":1694625302641359, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1694625302641365, "dur":792, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/level5.resS" }}
+,{ "pid":12345, "tid":6, "ts":1694625302642200, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/level5" }}
+,{ "pid":12345, "tid":6, "ts":1694625302642243, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1694625302642248, "dur":728, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/level5" }}
+,{ "pid":12345, "tid":6, "ts":1694625302643015, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/level4.resS" }}
+,{ "pid":12345, "tid":6, "ts":1694625302643056, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1694625302643061, "dur":779, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/level4.resS" }}
+,{ "pid":12345, "tid":6, "ts":1694625302643881, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/level4" }}
+,{ "pid":12345, "tid":6, "ts":1694625302643938, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1694625302643943, "dur":775, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/level4" }}
+,{ "pid":12345, "tid":6, "ts":1694625302644756, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/level3.resS" }}
+,{ "pid":12345, "tid":6, "ts":1694625302644796, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1694625302644801, "dur":773, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/level3.resS" }}
+,{ "pid":12345, "tid":6, "ts":1694625302645614, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/level3" }}
+,{ "pid":12345, "tid":6, "ts":1694625302645655, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1694625302645660, "dur":717, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/level3" }}
+,{ "pid":12345, "tid":6, "ts":1694625302646417, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/level2.resS" }}
+,{ "pid":12345, "tid":6, "ts":1694625302646459, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1694625302646464, "dur":810, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/level2.resS" }}
+,{ "pid":12345, "tid":6, "ts":1694625302647314, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/level2" }}
+,{ "pid":12345, "tid":6, "ts":1694625302647357, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1694625302647362, "dur":1063, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/level2" }}
+,{ "pid":12345, "tid":6, "ts":1694625302648471, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/level1.resS" }}
+,{ "pid":12345, "tid":6, "ts":1694625302648517, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1694625302648522, "dur":795, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/level1.resS" }}
+,{ "pid":12345, "tid":6, "ts":1694625302649359, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/level1" }}
+,{ "pid":12345, "tid":6, "ts":1694625302649407, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1694625302649412, "dur":731, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/level1" }}
+,{ "pid":12345, "tid":6, "ts":1694625302650183, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/level0.resS" }}
+,{ "pid":12345, "tid":6, "ts":1694625302650226, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1694625302650232, "dur":1079, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/level0.resS" }}
+,{ "pid":12345, "tid":6, "ts":1694625302651354, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":6, "ts":1694625302651412, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1694625302651418, "dur":930, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":6, "ts":1694625302652390, "dur":176, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/5926001686/OneDrive - School Board of Seminole County/Desktop/Builds for skyseekers/3DPlatformer_Data/boot.config" }}
+,{ "pid":12345, "tid":6, "ts":1694625302652567, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1694625302652611, "dur":90397, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1694625302746137, "dur":1647, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 0, "tid": 1, "ts": 1694625302776718, "dur": 756, "ph": "X", "name": "backend_profiler0.traceevents", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1694625302776625, "dur": 873, "ph": "X", "name": "Write chrome-trace events", "args": {} },

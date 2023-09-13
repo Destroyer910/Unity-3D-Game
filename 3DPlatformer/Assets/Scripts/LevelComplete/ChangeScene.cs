@@ -8,5 +8,6 @@ public class ChangeScene : MonoBehaviour
     public void changeSceneToPostOffice()
     {
         SceneManager.LoadScene("PostOffice");
+        Time.timeScale = 1;
     }
 }
