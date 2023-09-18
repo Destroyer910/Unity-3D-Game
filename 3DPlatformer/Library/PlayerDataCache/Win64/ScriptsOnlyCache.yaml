@@ -19,6 +19,7 @@ ScriptsOnlyBuild:
     - OpenAndClosePauseMenu
     - OpenAndClosePauseMenuInHub
     - PreviousLevelSO
+    - RaycastShadow
     - RestartLevel
     - RotateCamWallRun
     - SOManagerScript
@@ -281,17 +282,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7418}
     - Class: 114
-      Script: {instanceID: 7910}
+      Script: {instanceID: 7802}
     - Class: 114
-      Script: {instanceID: 7936}
+      Script: {instanceID: 7912}
     - Class: 114
-      Script: {instanceID: 8066}
+      Script: {instanceID: 7938}
     - Class: 114
-      Script: {instanceID: 8288}
+      Script: {instanceID: 8068}
     - Class: 114
-      Script: {instanceID: 8432}
+      Script: {instanceID: 8290}
     - Class: 114
-      Script: {instanceID: 8636}
+      Script: {instanceID: 8434}
+    - Class: 114
+      Script: {instanceID: 8638}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -370,9 +373,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7810}
     - Class: 114
-      Script: {instanceID: 8288}
+      Script: {instanceID: 8290}
     - Class: 114
-      Script: {instanceID: 8432}
+      Script: {instanceID: 8434}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -487,9 +490,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7418}
     - Class: 114
-      Script: {instanceID: 8440}
+      Script: {instanceID: 8442}
     - Class: 114
-      Script: {instanceID: 8636}
+      Script: {instanceID: 8638}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -620,17 +623,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7418}
     - Class: 114
-      Script: {instanceID: 7910}
+      Script: {instanceID: 7802}
     - Class: 114
-      Script: {instanceID: 7936}
+      Script: {instanceID: 7912}
     - Class: 114
-      Script: {instanceID: 8066}
+      Script: {instanceID: 7938}
     - Class: 114
-      Script: {instanceID: 8288}
+      Script: {instanceID: 8068}
     - Class: 114
-      Script: {instanceID: 8432}
+      Script: {instanceID: 8290}
     - Class: 114
-      Script: {instanceID: 8636}
+      Script: {instanceID: 8434}
+    - Class: 114
+      Script: {instanceID: 8638}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -832,9 +837,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7418}
     - Class: 114
-      Script: {instanceID: 8432}
+      Script: {instanceID: 8434}
     - Class: 114
-      Script: {instanceID: 8636}
+      Script: {instanceID: 8638}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1036,7 +1041,7 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
-      Hash: a01fe613fc75c64f204be67c08f386f5
+      Hash: 8c83aee0c157452904ba79f57ece8ebe
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DeathHealthManager
@@ -1990,16 +1995,22 @@ ScriptsOnlyBuild:
     className: ControlTrack
   - hash:
       serializedVersion: 2
-      Hash: 040dd48e3a027d5424519a5fa2009df4
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: ScrollRect
+      Hash: a169001c780e3b06dfc1147719f283c0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RaycastShadow
   - hash:
       serializedVersion: 2
       Hash: 950b6b566cc47b6c73237cb8534e5579
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Save
+  - hash:
+      serializedVersion: 2
+      Hash: 040dd48e3a027d5424519a5fa2009df4
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: ScrollRect
   - hash:
       serializedVersion: 2
       Hash: fcf4e94a697865870f940e8198f3b024
