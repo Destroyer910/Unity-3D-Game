@@ -274,7 +274,7 @@ GameObject:
   - component: {fileID: 62289596}
   - component: {fileID: 62289597}
   - component: {fileID: 62289598}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1482,7 +1482,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 250437776}
-  m_LocalRotation: {x: 0.005680205, y: -2.688454e-10, z: 1.5271216e-12, w: 0.9999839}
+  m_LocalRotation: {x: 0.005680205, y: 2.6884533e-10, z: -1.5271213e-12, w: 0.9999839}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6417,7 +6417,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 274180439}
-  m_LocalRotation: {x: -0.012461897, y: -5.5502535e-17, z: -2.2509102e-18, w: 0.9999224}
+  m_LocalRotation: {x: -0.012461895, y: -2.7751266e-16, z: -4.3156573e-18, w: 0.9999224}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -15060,7 +15060,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 875463930}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15559,7 +15559,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.0056802044, y: -0.0000000014225958, z: 8.080764e-12, w: 0.9999839}
+  m_LocalRotation: {x: 0.0056802044, y: 0.0000000014225958, z: -8.080764e-12, w: 0.9999839}
   m_LocalPosition: {x: -4.939342, y: 10.86, z: -14.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -22496,7 +22496,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1256745586}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: RotateChecks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23095,7 +23095,7 @@ GameObject:
   - component: {fileID: 1361222413}
   - component: {fileID: 1361222416}
   - component: {fileID: 1361222415}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Cube
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -23991,7 +23991,7 @@ GameObject:
   - component: {fileID: 1494543783}
   - component: {fileID: 1494543782}
   - component: {fileID: 1494543781}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: GFX
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -24048,7 +24048,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d917bd14f08d95f439b275e15d808374, type: 2}
+  - {fileID: 2100000, guid: 0669415710e961b45afebaab19ba6c67, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -32692,7 +32692,7 @@ GameObject:
   - component: {fileID: 2083618079}
   - component: {fileID: 2083618080}
   - component: {fileID: 2083618081}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Third Person Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -33626,7 +33626,7 @@ GameObject:
   - component: {fileID: 2129414480}
   - component: {fileID: 2129414481}
   - component: {fileID: 2129414482}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}

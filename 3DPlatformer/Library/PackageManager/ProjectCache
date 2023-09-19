@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638302216215206310
-    m_Hash: 3157996653
+      ticks: 638307393330587391
+    m_Hash: 2754928485
   m_LockFileStatus:
     m_FilePath: C:/Users/5926001686/Documents/Unity-3D-Game/3DPlatformer/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638302216224836924
-    m_Hash: 2741856451
+      ticks: 638307393330647259
+    m_Hash: 1795202079
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -430,6 +430,76 @@ m_ResolvedPackages:
     path: 
   unityLifecycle:
     version: 1.2.5
+    nextVersion: 
+- packageId: com.unity.shadergraph@12.1.8
+  testable: 0
+  isDirectDependency: 1
+  version: 12.1.8
+  source: 2
+  resolvedPath: C:\Users\5926001686\Documents\Unity-3D-Game\3DPlatformer\Library\PackageCache\com.unity.shadergraph@12.1.8
+  assetPath: Packages/com.unity.shadergraph
+  name: com.unity.shadergraph
+  displayName: Shader Graph
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: The Shader Graph package adds a visual Shader editing tool to Unity.
+    You can use this tool to create Shaders in a visual way instead of writing code.
+    Specific render pipelines can implement specific graph features. Currently, both
+    the High Definition Rendering Pipeline and the Universal Rendering Pipeline support
+    Shader Graph.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 12.1.8
+    compatible:
+    - 12.1.8
+    verified: 12.1.8
+  dependencies:
+  - name: com.unity.render-pipelines.core
+    version: 12.1.8
+  - name: com.unity.searcher
+    version: 4.9.1
+  resolvedDependencies:
+  - name: com.unity.render-pipelines.core
+    version: 12.1.8
+  - name: com.unity.ugui
+    version: 1.0.0
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.searcher
+    version: 4.9.1
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: 
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 12.1.8
     nextVersion: 
 - packageId: com.unity.test-framework@1.1.31
   testable: 0
@@ -2601,6 +2671,127 @@ m_ResolvedPackages:
     path: 
   unityLifecycle:
     version: 1.0.6
+    nextVersion: 
+- packageId: com.unity.render-pipelines.core@12.1.8
+  testable: 0
+  isDirectDependency: 0
+  version: 12.1.8
+  source: 2
+  resolvedPath: C:\Users\5926001686\Documents\Unity-3D-Game\3DPlatformer\Library\PackageCache\com.unity.render-pipelines.core@12.1.8
+  assetPath: Packages/com.unity.render-pipelines.core
+  name: com.unity.render-pipelines.core
+  displayName: Core RP Library
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: SRP Core makes it easier to create or customize a Scriptable Render
+    Pipeline (SRP). SRP Core contains reusable code, including boilerplate code for
+    working with platform-specific graphics APIs, utility functions for common rendering
+    operations, and  shader libraries. The code in SRP Core is use by the High Definition
+    Render Pipeline (HDRP) and Universal Render Pipeline (URP). If you are creating
+    a custom SRP from scratch or customizing a prebuilt SRP, using SRP Core will
+    save you time.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 12.1.8
+    compatible:
+    - 12.1.8
+    verified: 12.1.8
+  dependencies:
+  - name: com.unity.ugui
+    version: 1.0.0
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.ugui
+    version: 1.0.0
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: 
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 12.1.8
+    nextVersion: 
+- packageId: com.unity.searcher@4.9.1
+  testable: 0
+  isDirectDependency: 0
+  version: 4.9.1
+  source: 1
+  resolvedPath: C:\Users\5926001686\Documents\Unity-3D-Game\3DPlatformer\Library\PackageCache\com.unity.searcher@4.9.1
+  assetPath: Packages/com.unity.searcher
+  name: com.unity.searcher
+  displayName: Searcher
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: General search window for use in the Editor. First target use is for
+    GraphView node search.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 4.9.1
+    compatible:
+    - 4.9.1
+    verified: 4.9.1
+  dependencies: []
+  resolvedDependencies: []
+  keywords:
+  - search
+  - searcher
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: 
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.searcher.git
+    revision: 9e68a2a9ba29bd6783bc91d15ff82bbd459f2163
+    path: 
+  unityLifecycle:
+    version: 4.9.1
     nextVersion: 
 - packageId: com.unity.editorcoroutines@1.0.0
   testable: 0
