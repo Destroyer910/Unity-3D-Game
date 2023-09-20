@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e97e4a2671c05c4b8d0722d93583dc5, type: 3}
   m_Name: SpawnData
   m_EditorClassIdentifier: 
-  spawnName: CheckPoint (2)
+  spawnName: 
