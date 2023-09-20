@@ -8,6 +8,7 @@ public class IndividualLevelsSO : ScriptableObject
 {
     public float levelTime;
     public string levelRank;
+    public bool beatenLevel;
     
     public float bronzeReq;
     public float silverReq;

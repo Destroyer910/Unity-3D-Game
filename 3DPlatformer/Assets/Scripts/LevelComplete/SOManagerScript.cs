@@ -12,6 +12,7 @@ public class SOManagerScript : MonoBehaviour
         {
             level1.levelTime = time;
             level1.levelRank = rank;
+            level1.beatenLevel = true;
         }
     }
     public string returnLevel1Rank(float time)

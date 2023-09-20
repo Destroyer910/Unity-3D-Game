@@ -19,7 +19,9 @@ public class Save : MonoBehaviour
         File.WriteAllText
         (
             directory,
-            level1.levelTime.ToString()
+            level1.levelTime.ToString() + "\n" + 
+            level1.beatenLevel.ToString()
+
         );
 
     }
@@ -36,6 +38,7 @@ public class Save : MonoBehaviour
         Debug.Log("LOAD");
         //load the tutorial stats to the SO
         level1.levelTime = float.Parse(lines[0]);
+        level1.beatenLevel = bool.Parse(lines[1]);
         level1.findRank();
     }
     

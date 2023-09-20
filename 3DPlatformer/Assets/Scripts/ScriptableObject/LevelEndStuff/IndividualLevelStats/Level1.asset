@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6684cbab6c7fbd48a70c6c50bb91c85, type: 3}
   m_Name: Level1
   m_EditorClassIdentifier: 
-  levelTime: 3.4028235e+38
-  levelRank: 
+  levelTime: 76.52631
+  levelRank: Post Man
+  beatenLevel: 1
   bronzeReq: 100
   silverReq: 85
   goldReq: 70

@@ -374,6 +374,8 @@
 "Assets/Scripts/LevelComplete/ImmediateUpdater.cs"
 "Assets/Scripts/LevelComplete/NameLevel.cs"
 "Assets/Scripts/LevelComplete/SOManagerScript.cs"
+"Assets/Scripts/LevelUnlocks/DissapearOnUnlock.cs"
+"Assets/Scripts/LevelUnlocks/SetLevelUnlock.cs"
 "Assets/Scripts/PauseMenuStuffffff/EnableMenu.cs"
 "Assets/Scripts/PauseMenuStuffffff/OpenAndClosePauseMenu.cs"
 "Assets/Scripts/PauseMenuStuffffff/OpenAndClosePauseMenuInHub.cs"
