@@ -129,7 +129,15 @@ public class ThirdPersonMovement : MonoBehaviour
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
             if(!isDashing)
             {
-                controller.Move(moveDir.normalized * speed * Time.deltaTime);
+                if(Time.timeScale != 1 && Time.timeScale != 0)
+                {
+                    controller.Move(moveDir.normalized * speed * Time.deltaTime * (1 / Time.timeScale));
+                }
+                else
+                {
+                    controller.Move(moveDir.normalized * speed * Time.deltaTime);
+                }
+                
             }
             
         }
