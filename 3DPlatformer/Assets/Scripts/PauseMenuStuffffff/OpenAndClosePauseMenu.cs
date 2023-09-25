@@ -7,6 +7,7 @@ public class OpenAndClosePauseMenu : MonoBehaviour
     
     [SerializeField] private Timer timerScript;
     [SerializeField] private GameObject pauseMenu;
+    [SerializeField] private GameObject cam;
     private float trackTimeScale;
 
     // Update is called once per frame
@@ -21,6 +22,7 @@ public class OpenAndClosePauseMenu : MonoBehaviour
                 Cursor.lockState = CursorLockMode.Locked;
                 timerScript.unpauseTheTimer();
                 Time.timeScale = trackTimeScale;
+                cam.SetActive(true);
             }
             else
             {
@@ -30,6 +32,7 @@ public class OpenAndClosePauseMenu : MonoBehaviour
                 timerScript.pauseTheTimer();
                 trackTimeScale = Time.timeScale;
                 Time.timeScale = 0;
+                cam.SetActive(false);
             }
         }
     }
@@ -41,5 +44,6 @@ public class OpenAndClosePauseMenu : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         timerScript.unpauseTheTimer();
         Time.timeScale = trackTimeScale;
+        cam.SetActive(true);
     }
 }

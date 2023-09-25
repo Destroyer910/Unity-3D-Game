@@ -6417,7 +6417,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 274180439}
-  m_LocalRotation: {x: -0.012461897, y: -5.5502535e-17, z: -2.2509102e-18, w: 0.9999224}
+  m_LocalRotation: {x: -0.012461894, y: 9.3125013e-10, z: 1.1606042e-11, w: 0.9999224}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -15581,7 +15581,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ShowDebugText: 0
   m_ShowCameraFrustum: 1
-  m_IgnoreTimeScale: 0
+  m_IgnoreTimeScale: 1
   m_WorldUpOverride: {fileID: 0}
   m_UpdateMethod: 1
   m_BlendUpdateMethod: 1
@@ -32923,6 +32923,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerScript: {fileID: 1814488097}
   pauseMenu: {fileID: 1897717932}
+  cam: {fileID: 136278032}
 --- !u!114 &2083618081
 MonoBehaviour:
   m_ObjectHideFlags: 0

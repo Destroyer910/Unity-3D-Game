@@ -12232,7 +12232,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slowTime: 0
   canSlowTime: 1
-  slowTimeAmount: 10
+  slowTimeAmount: 2.5
 --- !u!65 &720391885
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22066,6 +22066,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerScript: {fileID: 1814488097}
   pauseMenu: {fileID: 1897717932}
+  cam: {fileID: 136278032}
 --- !u!114 &2083618081
 MonoBehaviour:
   m_ObjectHideFlags: 0

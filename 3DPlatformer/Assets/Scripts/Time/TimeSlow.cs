@@ -16,11 +16,13 @@ public class TimeSlow : MonoBehaviour
         {
             Time.timeScale = 0.5f;
             canSlowTime = false;
+            gameObject.transform.position = new Vector3(transform.position.x, transform.position.y - .5f, transform.position.z);
         }
         if(!slowTime && !canSlowTime)
         {
             Time.timeScale = 1f;
             canSlowTime = true;
+            gameObject.transform.position = new Vector3(transform.position.x, transform.position.y + .5f, transform.position.z);
         }
     }
 
@@ -32,7 +34,7 @@ public class TimeSlow : MonoBehaviour
 
     private IEnumerator waitThenSpeed()
     {
-        yield return new WaitForSeconds(slowTimeAmount / 2);
+        yield return new WaitForSeconds(slowTimeAmount / (1 / Time.timeScale));
         slowTime = false;
     }
 }
