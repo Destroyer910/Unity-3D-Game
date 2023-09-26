@@ -15,7 +15,7 @@ public class ThirdPersonMovement : MonoBehaviour
     public float groundDistance = 0.6f;
     public LayerMask ground;
 
-    bool isGrounded;
+    public static bool isGrounded;
     bool isDashing;
     bool isRunning = false;
     bool canDash;

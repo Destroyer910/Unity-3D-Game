@@ -112,6 +112,7 @@ namespace EasyUI.Helpers {
          uiCanvasGroup.alpha = 0f ;
          uiCanvasGroup.interactable = false ;
          uiCanvasGraphicRaycaster.enabled = false ;
+         Debug.Log("Dismissed");
       }
 
       private void OnDestroy () {

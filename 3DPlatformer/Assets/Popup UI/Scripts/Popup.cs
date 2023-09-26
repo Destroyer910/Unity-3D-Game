@@ -93,8 +93,10 @@ namespace EasyUI.Popup {
 
 
       public static void Dismiss () {
-         if (_isLoaded)
+         Debug.Log("Dismissed");
+         if (_isLoaded) {
             popupUI.Dismiss () ; 
+         }
       }
 
    }

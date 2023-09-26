@@ -81,6 +81,7 @@ public class DeathHealthManager : MonoBehaviour
 
     void Update()
     {
+        if (transform.position.y < -50) { health = 0;}
         if(health <= 0)
         {
             cam.SetActive(false);
