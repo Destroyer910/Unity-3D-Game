@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:3DPlatformer/Assets/Materials/Cloak.png.meta
-guid: ae60201f9fcff0744a8e7cfaab95e5dc
-========
-guid: d37bb82941160814b98a3987091d6481
->>>>>>>> LBriggsSeptember:3DPlatformer/Assets/Scripts/Player/PRP_TurretGun_A_DM.jpg.meta
+guid: 735892f87b2712e40b0db518dd80fad3
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

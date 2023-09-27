@@ -16,7 +16,6 @@ public class PlayerAnimator : MonoBehaviour
     void Update()
     {
         bool Walking = (Input.GetKey("w") || Input.GetKey("a") || Input.GetKey("s") || Input.GetKey("d"));
-        Debug.Log(Walking);
         if(Walking) {
             animator.SetBool("isWalking", true);
         }

@@ -6,7 +6,7 @@ public class TurretShoot : MonoBehaviour
 {   
 
     [SerializeField] private GameObject bulletThing;
-    public float Second_Delay;
+    public float Second_Delay = 3f;
 
     // Start is called before the first frame update
     void Start()
