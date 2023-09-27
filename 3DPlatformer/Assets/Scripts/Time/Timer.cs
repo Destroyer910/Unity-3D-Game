@@ -21,9 +21,9 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(timerGoing == true)
+        if(timerGoing == true && Time.timeScale != 0)
         {
-            currentTime += Time.deltaTime;
+            currentTime += Time.deltaTime * (1 / Time.timeScale);
         }
         TimeSpan timeItself = TimeSpan.FromSeconds(currentTime);
         timerItself.text = timeItself.ToString(@"mm\:ss\:fff");

@@ -522,6 +522,7 @@ GameObject:
   - component: {fileID: 832647443}
   - component: {fileID: 832647442}
   - component: {fileID: 832647445}
+  - component: {fileID: 832647446}
   m_Layer: 5
   m_Name: Start
   m_TagString: Untagged
@@ -594,6 +595,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 832647446}
+        m_TargetAssemblyTypeName: Save, Assembly-CSharp
+        m_MethodName: load
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 832647445}
         m_TargetAssemblyTypeName: LoadFromStartMenu, Assembly-CSharp
         m_MethodName: startGame
@@ -657,6 +670,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transition: {fileID: 459791141}
+--- !u!114 &832647446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832647440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73ff350a3f5d3ea4da0ab39eef1932a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level1: {fileID: 11400000, guid: e53ad60ce44d93b46b3471679c1b2567, type: 2}
 --- !u!1 &1030071696
 GameObject:
   m_ObjectHideFlags: 0

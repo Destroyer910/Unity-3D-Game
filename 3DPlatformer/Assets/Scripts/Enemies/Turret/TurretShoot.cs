@@ -11,7 +11,9 @@ public class TurretShoot : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         StartCoroutine(shoot());
+        
     }
 
     private IEnumerator shoot()

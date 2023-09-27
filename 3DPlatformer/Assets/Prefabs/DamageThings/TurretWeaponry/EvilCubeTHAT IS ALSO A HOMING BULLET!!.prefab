@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1058199446124833337}
   - component: {fileID: 8204094138659236635}
   - component: {fileID: -675658440452752899}
+  - component: {fileID: 3384781095067897773}
   m_Layer: 7
   m_Name: EvilCubeTHAT IS ALSO A HOMING BULLET!!
   m_TagString: Damage
@@ -31,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 7667274506333463147}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.1, z: 0.2}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -112,7 +113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3650bd23b90f0e34f982d23e85ce14f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 13
+  speed: 12
 --- !u!96 &8204094138659236635
 TrailRenderer:
   serializedVersion: 2
@@ -228,3 +229,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!135 &3384781095067897773
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7667274506333463147}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 15
+  m_Center: {x: 0, y: 0, z: 0}

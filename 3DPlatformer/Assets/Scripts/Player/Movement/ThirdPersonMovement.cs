@@ -12,7 +12,7 @@ public class ThirdPersonMovement : MonoBehaviour
     Vector3 velocity;
 
     public Transform groundCheck;
-    public float groundDistance = 0.4f;
+    public float groundDistance = 0.6f;
     public LayerMask ground;
 
     public static bool isGrounded;
@@ -123,24 +123,47 @@ public class ThirdPersonMovement : MonoBehaviour
         if(direction.magnitude >= 0.1f && canMove) //If the the player has any of the non jump movement buttons pressed then do the movment math.
         {
             float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
-            float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
+            float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime * (1 / Time.timeScale));
             transform.rotation = Quaternion.Euler(0f, angle, 0f);
 
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
             if(!isDashing)
             {
-                controller.Move(moveDir.normalized * speed * Time.deltaTime);
+                if(Time.timeScale != 1 && Time.timeScale != 0)
+                {
+                    controller.Move(moveDir.normalized * speed * Time.deltaTime * (1 / Time.timeScale));
+                }
+                else
+                {
+                    controller.Move(moveDir.normalized * speed * Time.deltaTime);
+                }
+                
             }
             
         }
         
         if(canMove)
         {
-            //Gravity.
-            velocity.y += gravity * Time.deltaTime;
-
-            //Do the vertical movement.
-            controller.Move(velocity * Time.deltaTime);
+            if(Time.timeScale != 1 && Time.timeScale != 0)
+            {
+                //Gravity.
+                velocity.y += gravity * Time.deltaTime * (1 / Time.timeScale);
+            }
+            else
+            {
+                velocity.y += gravity * Time.deltaTime;
+            }
+            
+            if(Time.timeScale != 1 && Time.timeScale != 0)
+            {
+                //Do the vertical movement.
+                controller.Move(velocity * Time.deltaTime * (1 / Time.timeScale));
+            }
+            else
+            {
+                controller.Move(velocity * Time.deltaTime);
+            }
+            
         }
     }
 

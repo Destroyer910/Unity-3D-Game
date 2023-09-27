@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DeathHealthManager : MonoBehaviour
 {
@@ -11,6 +12,11 @@ public class DeathHealthManager : MonoBehaviour
     [SerializeField] private GameObject playerModel;
     [SerializeField] private GameObject deathScreen;
     [SerializeField] private GameObject cam;
+    [SerializeField] private GameObject heart1;
+    [SerializeField] private GameObject heart2;
+    [SerializeField] private GameObject heart3;
+    public Sprite fullHeart;
+    public Sprite emptyHeart;
 
     void OnCollisionEnter(Collision other)
     {
@@ -19,6 +25,7 @@ public class DeathHealthManager : MonoBehaviour
             health -= 1;
             canBeHurt = false;
             StartCoroutine(invincibilityTime());
+            updateHPSprites();
         }
         if(other.gameObject.CompareTag("HealSmall"))
         {
@@ -26,10 +33,12 @@ public class DeathHealthManager : MonoBehaviour
             {
                 health += 1;
             }
+            updateHPSprites();
         }
         if(other.gameObject.CompareTag("HealFull"))
         {
             health = 3;
+            updateHPSprites();
         }
     }
 
@@ -42,6 +51,34 @@ public class DeathHealthManager : MonoBehaviour
         canBeHurt = true;
     }
 
+    private void updateHPSprites()
+    {
+        if(health == 3)
+        {
+            heart1.GetComponent<Image>().sprite = fullHeart;
+            heart2.GetComponent<Image>().sprite = fullHeart;
+            heart3.GetComponent<Image>().sprite = fullHeart;
+        }
+        if(health == 2)
+        {
+            heart1.GetComponent<Image>().sprite = fullHeart;
+            heart2.GetComponent<Image>().sprite = fullHeart;
+            heart3.GetComponent<Image>().sprite = emptyHeart;
+        }
+        if(health == 1)
+        {
+            heart1.GetComponent<Image>().sprite = fullHeart;
+            heart2.GetComponent<Image>().sprite = emptyHeart;
+            heart3.GetComponent<Image>().sprite = emptyHeart;
+        }
+        if(health < 1)
+        {
+            heart1.GetComponent<Image>().sprite = emptyHeart;
+            heart2.GetComponent<Image>().sprite = emptyHeart;
+            heart3.GetComponent<Image>().sprite = emptyHeart;
+        }
+    }
+
     void Update()
     {
         if (transform.position.y < -50) { health = 0;}
@@ -51,6 +88,7 @@ public class DeathHealthManager : MonoBehaviour
             gameObject.SetActive(false);
         }
     }
+
 
     
 

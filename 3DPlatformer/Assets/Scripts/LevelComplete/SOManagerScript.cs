@@ -4,31 +4,32 @@ using UnityEngine;
 
 public class SOManagerScript : MonoBehaviour
 {
-    [SerializeField] private IndividualLevelsSO sampleScene;
+    [SerializeField] private IndividualLevelsSO level1;
 
-    public void updateSampleScene(float time, string rank)
+    public void updateLevel1(float time, string rank)
     {
-        if(time < sampleScene.levelTime)
+        if(time < level1.levelTime)
         {
-            sampleScene.levelTime = time;
-            sampleScene.levelRank = rank;
+            level1.levelTime = time;
+            level1.levelRank = rank;
+            level1.beatenLevel = true;
         }
     }
-    public string returnSampleSceneRank(float time)
+    public string returnLevel1Rank(float time)
     {
-        if(time <= sampleScene.platReq)
+        if(time <= level1.platReq)
         {
             return "Hermes Himself";
         }
-        else if(time <= sampleScene.goldReq)
+        else if(time <= level1.goldReq)
         {
             return "Post Master General";
         }
-        else if(time <= sampleScene.silverReq)
+        else if(time <= level1.silverReq)
         {
             return "Post Man";
         }
-        else if(time <= sampleScene.bronzeReq)
+        else if(time <= level1.bronzeReq)
         {
             return "Paper Boy";
         }
@@ -38,23 +39,23 @@ public class SOManagerScript : MonoBehaviour
         }
     }
 
-    public float returnRankReqSampleScene(string rank)
+    public float returnRankReqLevel1(string rank)
     {
         if(rank == "plat")
         {
-            return sampleScene.platReq;
+            return level1.platReq;
         }
         else if(rank == "gold")
         {
-            return sampleScene.goldReq;
+            return level1.goldReq;
         }
         else if(rank == "silver")
         {
-            return sampleScene.silverReq;
+            return level1.silverReq;
         }
         else
         {
-            return sampleScene.bronzeReq;
+            return level1.bronzeReq;
         }
 
     }

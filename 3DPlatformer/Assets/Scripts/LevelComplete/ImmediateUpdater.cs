@@ -29,15 +29,17 @@ public class ImmediateUpdater : MonoBehaviour
         spawn.spawnName = "StartSpawn";
         levelRank.text = "Hermes Himself";
         targetTime = startTime.time;
-        if(previousLevel.previousLevel == "SampleScene")
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+        if(previousLevel.previousLevel == "Level1")
         {
-            managerScript.updateSampleScene(startTime.time, managerScript.returnSampleSceneRank(startTime.time));
-            platReq = managerScript.returnRankReqSampleScene("plat");
-            goldReq = managerScript.returnRankReqSampleScene("gold");
-            silverReq = managerScript.returnRankReqSampleScene("silver");
-            bronzeReq = managerScript.returnRankReqSampleScene("bronze");
+            managerScript.updateLevel1(startTime.time, managerScript.returnLevel1Rank(startTime.time));
+            platReq = managerScript.returnRankReqLevel1("plat");
+            goldReq = managerScript.returnRankReqLevel1("gold");
+            silverReq = managerScript.returnRankReqLevel1("silver");
+            bronzeReq = managerScript.returnRankReqLevel1("bronze");
         }
-        
+        startTime.time = 0;
     }
 
     void Update()
@@ -47,7 +49,6 @@ public class ImmediateUpdater : MonoBehaviour
             if((currentTime + Time.deltaTime * 10) >= targetTime)
             {
                 currentTime = targetTime;
-                startTime.time = 0;
             }
             else
             {
