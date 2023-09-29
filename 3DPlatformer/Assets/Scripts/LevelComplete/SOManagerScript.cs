@@ -5,6 +5,7 @@ using UnityEngine;
 public class SOManagerScript : MonoBehaviour
 {
     [SerializeField] private IndividualLevelsSO level1;
+    [SerializeField] private IndividualLevelsSO level2;
 
     public void updateLevel1(float time, string rank)
     {
@@ -35,7 +36,7 @@ public class SOManagerScript : MonoBehaviour
         }
         else
         {
-            return "Your Fired!";
+            return "You're Fired!";
         }
     }
 
@@ -59,4 +60,59 @@ public class SOManagerScript : MonoBehaviour
         }
 
     }
+
+    public void updateLevel2(float time, string rank)
+    {
+        if(time < level2.levelTime)
+        {
+            level2.levelTime = time;
+            level2.levelRank = rank;
+            level2.beatenLevel = true;
+        }
+    }
+    public string returnLevel2Rank(float time)
+    {
+        if(time <= level2.platReq)
+        {
+            return "Hermes Himself";
+        }
+        else if(time <= level2.goldReq)
+        {
+            return "Post Master General";
+        }
+        else if(time <= level2.silverReq)
+        {
+            return "Post Man";
+        }
+        else if(time <= level2.bronzeReq)
+        {
+            return "Paper Boy";
+        }
+        else
+        {
+            return "You're Fired!";
+        }
+    }
+
+    public float returnRankReqLevel2(string rank)
+    {
+        if(rank == "plat")
+        {
+            return level2.platReq;
+        }
+        else if(rank == "gold")
+        {
+            return level2.goldReq;
+        }
+        else if(rank == "silver")
+        {
+            return level2.silverReq;
+        }
+        else
+        {
+            return level2.bronzeReq;
+        }
+
+    }
+    
 }

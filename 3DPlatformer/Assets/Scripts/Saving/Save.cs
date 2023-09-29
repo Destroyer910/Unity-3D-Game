@@ -7,6 +7,7 @@ public class Save : MonoBehaviour
 {
 
     [SerializeField] private IndividualLevelsSO level1;
+    [SerializeField] private IndividualLevelsSO level2;
 
     private string directory;
     
@@ -20,7 +21,9 @@ public class Save : MonoBehaviour
         (
             directory,
             level1.levelTime.ToString() + "\n" + 
-            level1.beatenLevel.ToString()
+            level1.beatenLevel.ToString() + "\n" + 
+            level2.levelTime.ToString() + "\n" + 
+            level2.beatenLevel.ToString()
 
         );
 
@@ -40,6 +43,9 @@ public class Save : MonoBehaviour
         level1.levelTime = float.Parse(lines[0]);
         level1.beatenLevel = bool.Parse(lines[1]);
         level1.findRank();
+        level2.levelTime = float.Parse(lines[2]);
+        level2.beatenLevel = bool.Parse(lines[3]);
+        level2.findRank();
     }
     
 }

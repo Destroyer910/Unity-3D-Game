@@ -39,6 +39,14 @@ public class ImmediateUpdater : MonoBehaviour
             silverReq = managerScript.returnRankReqLevel1("silver");
             bronzeReq = managerScript.returnRankReqLevel1("bronze");
         }
+        else if(previousLevel.previousLevel == "Level2")
+        {
+            managerScript.updateLevel2(startTime.time, managerScript.returnLevel2Rank(startTime.time));
+            platReq = managerScript.returnRankReqLevel2("plat");
+            goldReq = managerScript.returnRankReqLevel2("gold");
+            silverReq = managerScript.returnRankReqLevel2("silver");
+            bronzeReq = managerScript.returnRankReqLevel2("bronze");
+        }
         startTime.time = 0;
     }
 
