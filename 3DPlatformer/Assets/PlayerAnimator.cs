@@ -29,8 +29,13 @@ public class PlayerAnimator : MonoBehaviour
         }
         if(ThirdPersonMovement.isGrounded == false) {
             animator.SetBool("isJumping", true);
-        } else {
+        } else () {
             animator.SetBool("isJumping", false);
+        }
+        if (ThirdPersonMovement.isWallRunning == true) {
+            animator.SetBool("isWallrunning", true);
+        } else {
+            animator.SetBool("isWallrunning", false);
         }
     }
 }
