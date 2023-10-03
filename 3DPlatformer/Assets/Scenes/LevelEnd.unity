@@ -1431,6 +1431,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level1: {fileID: 11400000, guid: e53ad60ce44d93b46b3471679c1b2567, type: 2}
+  level2: {fileID: 11400000, guid: eb3e79b72d420f24b9130746b46514bb, type: 2}
 --- !u!4 &1623687815
 Transform:
   m_ObjectHideFlags: 0
@@ -1477,6 +1478,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level1: {fileID: 11400000, guid: e53ad60ce44d93b46b3471679c1b2567, type: 2}
+  level2: {fileID: 11400000, guid: eb3e79b72d420f24b9130746b46514bb, type: 2}
 --- !u!1 &2035864649
 GameObject:
   m_ObjectHideFlags: 0

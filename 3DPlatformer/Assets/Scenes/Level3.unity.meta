@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: 56c55ccda93b67f4397ce74cb4bd2687
+<<<<<<<< HEAD:3DPlatformer/Assets/Scenes/Level2.unity.meta
+guid: 0a3dbecaf6f671c46a97d435b957f20f
+========
+guid: c2f9056d387338c43af52258ab3e24ff
+>>>>>>>> LBriggsSeptember:3DPlatformer/Assets/Scenes/Level1.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 

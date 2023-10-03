@@ -18,7 +18,14 @@ public class TurretShoot : MonoBehaviour
 
     private IEnumerator shoot()
     {
-        yield return new WaitForSeconds(Second_Delay);
+        if(Time.timeScale == 1 || Time.timeScale == 0)
+        {
+            yield return new WaitForSeconds(Second_Delay);
+        }
+        else
+        {
+            yield return new WaitForSeconds(Second_Delay * (3/Time.timeScale));
+        }
         Instantiate(bulletThing, this.transform);
         StartCoroutine(shoot());
     }
