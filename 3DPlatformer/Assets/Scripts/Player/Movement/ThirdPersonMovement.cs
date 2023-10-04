@@ -15,6 +15,7 @@ public class ThirdPersonMovement : MonoBehaviour
     public float groundDistance = 0.6f;
     public LayerMask ground;
 
+    public static bool isWallRunning;
     public static bool isGrounded;
     bool isDashing;
     bool isRunning = false;
@@ -38,6 +39,7 @@ public class ThirdPersonMovement : MonoBehaviour
     {
         if(other.gameObject.CompareTag("RunableWall"))
         {
+            isWallRunning = true;
             velocity.y = 0;
             gravity = -1f;
         }        
@@ -48,6 +50,7 @@ public class ThirdPersonMovement : MonoBehaviour
     {
         if(other.gameObject.CompareTag("RunableWall"))
         {
+            isWallRunning = false;
             gravity = originalGravity;
         }
     }

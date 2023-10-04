@@ -28,6 +28,7 @@ public class TimeSlow : MonoBehaviour
 
     private void OnCollisionEnter(Collision other) 
     {
+        Debug.Log("Collided");
         slowTime = true;   
         StartCoroutine(waitThenSpeed()); 
     }
