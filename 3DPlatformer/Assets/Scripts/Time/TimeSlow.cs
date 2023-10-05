@@ -8,13 +8,14 @@ public class TimeSlow : MonoBehaviour
     public bool slowTime;
     public bool canSlowTime = true;
     public float DurationForWhichTimeIsSlowed = 5f;
+    public float TimeScaleFactor = 0.5f;
 
     // Update is called once per frame
     void Update()
     {
         if(slowTime && canSlowTime)
         {
-            Time.timeScale = 0.5f;
+            Time.timeScale = TimeScaleFactor;
             canSlowTime = false;
             gameObject.transform.position = new Vector3(transform.position.x, transform.position.y - .5f, transform.position.z);
         }
@@ -35,7 +36,7 @@ public class TimeSlow : MonoBehaviour
 
     private IEnumerator waitThenSpeed()
     {
-        yield return new WaitForSeconds(slowTimeAmount / (1 / Time.timeScale));
+        yield return new WaitForSecondsRealtime(DurationForWhichTimeIsSlowed);
         slowTime = false;
     }
 }

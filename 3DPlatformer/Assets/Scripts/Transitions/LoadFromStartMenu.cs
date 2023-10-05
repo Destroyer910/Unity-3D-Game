@@ -16,7 +16,7 @@ public class LoadFromStartMenu : MonoBehaviour
 
     private IEnumerator startGameStuff()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSecondsRealtime(2f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

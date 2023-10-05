@@ -14,7 +14,7 @@ public class RestartLevel : MonoBehaviour
     private IEnumerator loadStuff()
     {
         endTransition.SetActive(true);
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSecondsRealtime(2f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

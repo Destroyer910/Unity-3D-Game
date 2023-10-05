@@ -84,6 +84,7 @@ public class DeathHealthManager : MonoBehaviour
         if (transform.position.y < -50) { health = 0;}
         if(health <= 0)
         {
+            Time.timeScale = 0;
             cam.SetActive(false);
             gameObject.SetActive(false);
         }

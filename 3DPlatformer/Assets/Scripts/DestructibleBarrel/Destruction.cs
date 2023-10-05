@@ -5,8 +5,10 @@ using UnityEngine;
 public class Destruction : MonoBehaviour
 {
     public GameObject destroyedVersion;
-    void OnCollisionEnter (Collision collision) {
-        if (collision.gameObject.CompareTag("Player")) {
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
             Explode();
         }
     }

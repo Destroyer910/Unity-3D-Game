@@ -5,8 +5,8 @@ using UnityEngine;
 public class TurretRotator : MonoBehaviour
 {
 
-    // [SerializeField] private float rotateSpeedOriginal = 4f;
-    public float rotateSpeed = 1f;
+    [SerializeField] private float rotateSpeedOriginal = 4f;
+    private float rotateSpeed;
    
 
     // Update is called once per frame
@@ -14,6 +14,6 @@ public class TurretRotator : MonoBehaviour
     {
         Debug.Log(Time.deltaTime);
         transform.rotation = Quaternion.Euler(0f, rotateSpeed, 0f);
-        // rotateSpeed += rotateSpeedOriginal;
+        rotateSpeed += rotateSpeedOriginal;
     }
 }
