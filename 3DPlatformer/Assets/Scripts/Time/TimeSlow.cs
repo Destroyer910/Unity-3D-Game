@@ -7,7 +7,7 @@ public class TimeSlow : MonoBehaviour
 
     public bool slowTime;
     public bool canSlowTime = true;
-    public float slowTimeAmount = 5f;
+    public float DurationForWhichTimeIsSlowed = 5f;
 
     // Update is called once per frame
     void Update()
