@@ -15,6 +15,7 @@ public class RestartLevel : MonoBehaviour
     {
         endTransition.SetActive(true);
         yield return new WaitForSeconds(2f);
+        Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

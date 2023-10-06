@@ -30,6 +30,7 @@ public class ActualEnding : MonoBehaviour
         endTransition.SetActive(true);
         yield return new WaitForSeconds(2f);
         previousLevel.previousLevel = SceneManager.GetActiveScene().name;
+        Time.timeScale = 1;
         SceneManager.LoadScene("LevelEnd");
     }
 }
