@@ -2181,7 +2181,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 250437776}
-  m_LocalRotation: {x: 0.005680218, y: 8.06536e-10, z: -4.5813748e-12, w: 0.9999839}
+  m_LocalRotation: {x: 0.005680218, y: -8.065359e-10, z: 4.5813743e-12, w: 0.9999839}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -7193,7 +7193,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 274180439}
-  m_LocalRotation: {x: -0.012461881, y: -9.3125013e-10, z: -1.16060295e-11, w: 0.9999224}
+  m_LocalRotation: {x: -0.012461884, y: 5.5502535e-17, z: 2.2509088e-18, w: 0.9999224}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -12809,7 +12809,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slowTime: 0
   canSlowTime: 1
-  slowTimeAmount: 3
+  DurationForWhichTimeIsSlowed: 5
+  TimeScaleFactor: 0.5
 --- !u!65 &385111195
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26508,7 +26509,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1685991040}
         m_TargetAssemblyTypeName: OpenAndClosePauseMenu, Assembly-CSharp
         m_MethodName: closePauseFromButton
         m_Mode: 1
@@ -27564,7 +27565,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slowTime: 0
   canSlowTime: 1
-  slowTimeAmount: 15
+  DurationForWhichTimeIsSlowed: 5
+  TimeScaleFactor: 0.5
 --- !u!65 &916665829
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27677,7 +27679,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slowTime: 0
   canSlowTime: 1
-  slowTimeAmount: 15
+  DurationForWhichTimeIsSlowed: 5
+  TimeScaleFactor: 0.5
 --- !u!65 &917813490
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28170,7 +28173,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.0056802174, y: 0.0000000012320043, z: -6.9981633e-12, w: 0.9999839}
+  m_LocalRotation: {x: 0.0056802174, y: -0.000000001232004, z: 6.9981638e-12, w: 0.9999839}
   m_LocalPosition: {x: -0.03, y: 7.31, z: -38.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -30441,7 +30444,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slowTime: 0
   canSlowTime: 1
-  slowTimeAmount: 2
+  DurationForWhichTimeIsSlowed: 5
+  TimeScaleFactor: 0.5
 --- !u!65 &1259873292
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30933,7 +30937,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slowTime: 0
   canSlowTime: 1
-  slowTimeAmount: 6
+  DurationForWhichTimeIsSlowed: 5
+  TimeScaleFactor: 0.5
 --- !u!65 &1310687524
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33412,6 +33417,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 758801259951776654, guid: f7bc3925d94bc694b9e7f4eae3791636, type: 3}
   m_PrefabInstance: {fileID: 1685991038}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1685991040 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5937639250328051173, guid: f7bc3925d94bc694b9e7f4eae3791636, type: 3}
+  m_PrefabInstance: {fileID: 1685991038}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 149391577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de81392ae4cb76c428a516bf471f955b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1685991047
 MonoBehaviour:
   m_ObjectHideFlags: 0
