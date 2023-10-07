@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: f15c336556dd74f40aaca655f7767970, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: ae00d62481b2b0249bd7bab81ab2a288, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.95731616, g: 0.6997216, b: 0.47198063, a: 1}
+  m_IndirectSpecularColor: {r: 0.5149614, g: 0.6143688, b: 0.58092713, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3646,7 +3646,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 274180439}
-  m_LocalRotation: {x: -0.012461882, y: -2.7751266e-16, z: -4.31565e-18, w: 0.9999224}
+  m_LocalRotation: {x: -0.012461883, y: 9.3125035e-10, z: 1.1606034e-11, w: 0.9999224}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -20434,6 +20434,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cb94f6783ad796499770c38f9228d30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BackgroundMusic: {fileID: 774395813868750423}
+  MusicManager: {fileID: 11400000, guid: 9c4ddf7139030a14da07840190493bc3, type: 2}
   startTransition: {fileID: 1605844289}
 --- !u!114 &1472506874
 MonoBehaviour:
@@ -20462,6 +20464,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endTransition: {fileID: 1965799584}
+  BackgroundMusic: {fileID: 774395813868750423}
+  MusicManager: {fileID: 11400000, guid: 9c4ddf7139030a14da07840190493bc3, type: 2}
 --- !u!1 &1475264382
 GameObject:
   m_ObjectHideFlags: 0
@@ -32491,6 +32495,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52df1f9cf9b530c4abb778cd0fb002e5, type: 3}
+--- !u!82 &774395813868750423 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5488340436919384441, guid: 52df1f9cf9b530c4abb778cd0fb002e5, type: 3}
+  m_PrefabInstance: {fileID: 774395813868750422}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &809669728330635439
 GameObject:
   m_ObjectHideFlags: 0
