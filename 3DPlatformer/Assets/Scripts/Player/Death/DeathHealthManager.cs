@@ -17,11 +17,13 @@ public class DeathHealthManager : MonoBehaviour
     [SerializeField] private GameObject heart3;
     public Sprite fullHeart;
     public Sprite emptyHeart;
+    public AudioSource HurtSound;
 
     void OnCollisionEnter(Collision other)
     {
         if(other.gameObject.CompareTag("Damage") && canBeHurt)
         {
+            HurtSound.Play();
             health -= 1;
             canBeHurt = false;
             StartCoroutine(invincibilityTime());
