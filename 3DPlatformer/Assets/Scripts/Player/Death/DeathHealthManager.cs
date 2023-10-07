@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class DeathHealthManager : MonoBehaviour
 {
-
+    public float iFrames = 2;
     public int health = 3;
     public bool canBeHurt = true;
     [SerializeField] private GameObject deathEffects;
@@ -46,7 +46,7 @@ public class DeathHealthManager : MonoBehaviour
     {
         Color tempColor = playerModel.GetComponent<Renderer>().material.color;
         playerModel.GetComponent<Renderer>().material.color = new Color(tempColor.r, tempColor.g, tempColor.b, .5f);
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSecondsRealtime(iFrames);
         playerModel.GetComponent<Renderer>().material.color = new Color(tempColor.r, tempColor.g, tempColor.b, 1f);
         canBeHurt = true;
     }
