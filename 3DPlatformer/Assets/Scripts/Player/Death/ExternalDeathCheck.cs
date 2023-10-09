@@ -7,12 +7,14 @@ public class ExternalDeathCheck : MonoBehaviour
     
     [SerializeField] private GameObject player;
     [SerializeField] private GameObject deathScreen;
+    [SerializeField] private Timer timerScript;
     
     void Update()
     {
         if(!player.activeSelf)
         {
             StartCoroutine(deathStuff());
+            timerScript.STOPTHETIMER();
         }
     }
 
