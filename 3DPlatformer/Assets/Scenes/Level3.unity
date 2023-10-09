@@ -6147,8 +6147,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18b8f738cc4770a4799c034c6779c308, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeedOriginal: 4
-  rotationAxis: 0
+  rotateSpeedOriginal: 2
+  rotationAxis: 1
 --- !u!1 &192276520
 GameObject:
   m_ObjectHideFlags: 0
@@ -7174,7 +7174,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 250437776}
-  m_LocalRotation: {x: 0.005680218, y: -8.065359e-10, z: 4.5813743e-12, w: 0.9999839}
+  m_LocalRotation: {x: 0.005680218, y: 8.06536e-10, z: -4.5813748e-12, w: 0.9999839}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -28388,7 +28388,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.0056802174, y: -0.000000001232004, z: 6.9981638e-12, w: 0.9999839}
+  m_LocalRotation: {x: 0.0056802174, y: 0.0000000012320043, z: -6.9981633e-12, w: 0.9999839}
   m_LocalPosition: {x: -0.03, y: 7.31, z: -38.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -32930,6 +32930,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 149391577}
   deathScreen: {fileID: 793007912}
+  timerScript: {fileID: 0}
 --- !u!114 &1472506875
 MonoBehaviour:
   m_ObjectHideFlags: 0
