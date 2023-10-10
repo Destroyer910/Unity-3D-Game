@@ -28,8 +28,6 @@ public class ThirdPersonMovement : MonoBehaviour
     public AudioSource WalkSound;
 
     public float speed = 6f;
-    public float curerntSpeed = 0;
-    public float accelDeccelSpeed = 1;
     public float normalSpeed = 8f;
     public float runSpeed = 12f;
     public float dashSpeed = 100f;
@@ -172,23 +170,6 @@ public class ThirdPersonMovement : MonoBehaviour
         
         Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
 
-        if(horizontal != 0 || vertical != 0)
-        {
-            curerntSpeed += accelDeccelSpeed * Time.deltaTime;
-            if(curerntSpeed > speed)
-            {
-                curerntSpeed = speed;
-            }
-        }
-        else
-        {
-            curerntSpeed -= accelDeccelSpeed * Time.deltaTime;
-            if(curerntSpeed < 0)
-            {
-                curerntSpeed = 0;
-            }
-        }
-
         if(direction.magnitude >= 0.1f && canMove) //If the the player has any of the non jump movement buttons pressed then do the movment math.
         {
             float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
@@ -200,11 +181,11 @@ public class ThirdPersonMovement : MonoBehaviour
             {
                 if(Time.timeScale != 1 && Time.timeScale != 0)
                 {
-                    controller.Move(moveDir.normalized * curerntSpeed * Time.deltaTime * (1 / Time.timeScale));
+                    controller.Move(moveDir.normalized * speed * Time.deltaTime * (1 / Time.timeScale));
                 }
                 else
                 {
-                    controller.Move(moveDir.normalized * curerntSpeed * Time.deltaTime);
+                    controller.Move(moveDir.normalized * speed * Time.deltaTime);
                 }
                 
             }
