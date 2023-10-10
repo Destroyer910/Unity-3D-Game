@@ -15,6 +15,8 @@ public class IndividualLevelsSO : ScriptableObject
     public float goldReq;
     public float platReq;
 
+    private void OnEnable() => hideFlags = HideFlags.DontUnloadUnusedAsset;
+
     public void findRank()
     {
         if(this.levelTime <= this.platReq)

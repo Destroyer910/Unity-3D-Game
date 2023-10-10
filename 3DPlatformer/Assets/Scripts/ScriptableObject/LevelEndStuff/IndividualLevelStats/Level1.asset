@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 32
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6684cbab6c7fbd48a70c6c50bb91c85, type: 3}
   m_Name: Level1
   m_EditorClassIdentifier: 
-  levelTime: 3.4028235e+38
-  levelRank: 
-  beatenLevel: 0
+  levelTime: 29.641535
+  levelRank: Hermes Himself
+  beatenLevel: 1
   bronzeReq: 100
   silverReq: 85
   goldReq: 70

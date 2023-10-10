@@ -137,7 +137,7 @@ public class ThirdPersonMovement : MonoBehaviour
         }
 
         //Do the dash.
-        if(Input.GetKeyDown(KeyCode.Q) && canDash && canMove)
+        if((Input.GetKeyDown(KeyCode.Q) || Input.GetMouseButtonDown(0)) && canDash && canMove)
         {
             canDash = false;
             isDashing = true;
