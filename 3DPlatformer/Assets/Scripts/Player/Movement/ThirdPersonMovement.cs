@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 public class ThirdPersonMovement : MonoBehaviour
 {
@@ -26,6 +27,8 @@ public class ThirdPersonMovement : MonoBehaviour
     bool canJump;
 
     public float speed = 6f;
+    public float curerntSpeed = 0;
+    public float accelDeccelSpeed = 1;
     public float normalSpeed = 8f;
     public float runSpeed = 12f;
     public float dashSpeed = 100f;
@@ -36,6 +39,15 @@ public class ThirdPersonMovement : MonoBehaviour
 
     public float turnSmoothTime = 0.1f;
     float turnSmoothVelocity;
+    public CinemachineFreeLook vcam;
+    float originalFov;
+    public float newFov = 60;
+    
+    private void Start() 
+    {
+        vcam.m_CommonLens = true;
+        originalFov = vcam.m_Lens.FieldOfView;
+    }
 
     //Start wallrunning 
     void OnTriggerEnter(Collider other)
@@ -91,7 +103,7 @@ public class ThirdPersonMovement : MonoBehaviour
     {
         Debug.Log(Time.timeScale);
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, ground);
-        if(!isGrounded && canCoyoteTime)
+        if((!isGrounded && canCoyoteTime) || isWallRunning)
         {
             canJump = true;
             if(!isCoyoteRunning)
@@ -134,6 +146,7 @@ public class ThirdPersonMovement : MonoBehaviour
             canJump = false;
             canCoyoteTime = false;
             velocity.y = jumpPower;
+            gravity = originalGravity;
         }
 
         //Do the dash.
@@ -142,6 +155,7 @@ public class ThirdPersonMovement : MonoBehaviour
             canDash = false;
             isDashing = true;
             trail.enabled = true;
+            vcam.m_Lens.FieldOfView = newFov;
             dash();
         }
 
@@ -150,6 +164,23 @@ public class ThirdPersonMovement : MonoBehaviour
         float vertical = Input.GetAxisRaw("Vertical");
         
         Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
+
+        if(horizontal != 0 || vertical != 0)
+        {
+            curerntSpeed += accelDeccelSpeed * Time.deltaTime;
+            if(curerntSpeed > speed)
+            {
+                curerntSpeed = speed;
+            }
+        }
+        else
+        {
+            curerntSpeed -= accelDeccelSpeed * Time.deltaTime;
+            if(curerntSpeed < 0)
+            {
+                curerntSpeed = 0;
+            }
+        }
 
         if(direction.magnitude >= 0.1f && canMove) //If the the player has any of the non jump movement buttons pressed then do the movment math.
         {
@@ -162,11 +193,11 @@ public class ThirdPersonMovement : MonoBehaviour
             {
                 if(Time.timeScale != 1 && Time.timeScale != 0)
                 {
-                    controller.Move(moveDir.normalized * speed * Time.deltaTime * (1 / Time.timeScale));
+                    controller.Move(moveDir.normalized * curerntSpeed * Time.deltaTime * (1 / Time.timeScale));
                 }
                 else
                 {
-                    controller.Move(moveDir.normalized * speed * Time.deltaTime);
+                    controller.Move(moveDir.normalized * curerntSpeed * Time.deltaTime);
                 }
                 
             }
@@ -226,6 +257,13 @@ public class ThirdPersonMovement : MonoBehaviour
         {
             speed = normalSpeed;
         } 
+        StartCoroutine(dashFovWait());
+    }
+
+    private IEnumerator dashFovWait()
+    {
+        yield return new WaitForSecondsRealtime(0.2f);
+        vcam.m_Lens.FieldOfView = originalFov;
     }
 
 }
