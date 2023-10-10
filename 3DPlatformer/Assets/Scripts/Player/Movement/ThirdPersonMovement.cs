@@ -21,6 +21,9 @@ public class ThirdPersonMovement : MonoBehaviour
     bool isRunning = false;
     bool canDash;
     bool canMove = true;
+    bool canCoyoteTime;
+    bool isCoyoteRunning = false;
+    bool canJump;
 
     public float speed = 6f;
     public float normalSpeed = 8f;
@@ -76,16 +79,38 @@ public class ThirdPersonMovement : MonoBehaviour
 		}
 	}
 
+    private IEnumerator coyoteTimeStuff()
+    {
+        isCoyoteRunning = true;
+        yield return new WaitForSecondsRealtime(1f);
+        canCoyoteTime = false;
+        isCoyoteRunning = false;
+    }
+
     void Update()
     {
         Debug.Log(Time.timeScale);
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, ground);
+        if(!isGrounded && canCoyoteTime)
+        {
+            canJump = true;
+            if(!isCoyoteRunning)
+            {
+                StartCoroutine(coyoteTimeStuff());
+            }
+        }
+        else if(!isGrounded && !canCoyoteTime)
+        {
+            canJump = false;
+        }
 
         if(isGrounded && velocity.y < 0)
         {
             velocity.y = 0;
             canDash = false;
             trail.enabled = false;
+            canCoyoteTime = true;
+            canJump = true;
         }
 
         //Start running when shift is pressed.
@@ -102,10 +127,12 @@ public class ThirdPersonMovement : MonoBehaviour
         }
 
         //Jump
-        if(Input.GetButtonDown("Jump") && isGrounded && canMove)
+        if(Input.GetButtonDown("Jump") && canJump && canMove)
         {
             canDash = true;
             isGrounded = false;
+            canJump = false;
+            canCoyoteTime = false;
             velocity.y = jumpPower;
         }
 
