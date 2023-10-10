@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class TouchCheckPoint : MonoBehaviour
 {
@@ -29,6 +30,7 @@ public class TouchCheckPoint : MonoBehaviour
       {
         canCheckpoint = false;
         spawns.spawnName = gameObject.name;
+        GetComponent<AudioSource>().Play();
         Instantiate(particles, gameObject.transform);
         timeScript.touchedCheckPoint(); 
       }  

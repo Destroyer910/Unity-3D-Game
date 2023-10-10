@@ -24,6 +24,7 @@ public class ThirdPersonMovement : MonoBehaviour
     bool canCoyoteTime;
     bool isCoyoteRunning = false;
     bool canJump;
+    public AudioSource WalkSound;
 
     public float speed = 6f;
     public float normalSpeed = 8f;
@@ -89,7 +90,6 @@ public class ThirdPersonMovement : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(Time.timeScale);
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, ground);
         if(!isGrounded && canCoyoteTime)
         {
@@ -145,6 +145,13 @@ public class ThirdPersonMovement : MonoBehaviour
             dash();
         }
 
+        if(isGrounded && isRunning)
+        {
+            WalkSound.Play();
+        } else
+        {
+            WalkSound.Pause();
+        }
 
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");

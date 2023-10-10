@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class DeathHealthManager : MonoBehaviour
 {
-
+    public float iFrames = 2;
     public int health = 3;
     public bool canBeHurt = true;
     [SerializeField] private GameObject deathEffects;
@@ -17,11 +17,13 @@ public class DeathHealthManager : MonoBehaviour
     [SerializeField] private GameObject heart3;
     public Sprite fullHeart;
     public Sprite emptyHeart;
+    public AudioSource HurtSound;
 
     void OnCollisionEnter(Collision other)
     {
         if(other.gameObject.CompareTag("Damage") && canBeHurt)
         {
+            HurtSound.Play();
             health -= 1;
             canBeHurt = false;
             StartCoroutine(invincibilityTime());
@@ -46,7 +48,7 @@ public class DeathHealthManager : MonoBehaviour
     {
         Color tempColor = playerModel.GetComponent<Renderer>().material.color;
         playerModel.GetComponent<Renderer>().material.color = new Color(tempColor.r, tempColor.g, tempColor.b, .5f);
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSecondsRealtime(iFrames);
         playerModel.GetComponent<Renderer>().material.color = new Color(tempColor.r, tempColor.g, tempColor.b, 1f);
         canBeHurt = true;
     }
