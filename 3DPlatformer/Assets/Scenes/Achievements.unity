@@ -565,6 +565,7 @@ GameObject:
   - component: {fileID: 331281845}
   - component: {fileID: 331281847}
   - component: {fileID: 331281846}
+  - component: {fileID: 331281848}
   m_Layer: 5
   m_Name: BeatLevel1
   m_TagString: Untagged
@@ -630,6 +631,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 331281844}
   m_CullTransparentMesh: 1
+--- !u!114 &331281848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 331281844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10b47f6fbbc6c484c9a144d034c9e843, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  theLevel: {fileID: 11400000, guid: e53ad60ce44d93b46b3471679c1b2567, type: 2}
+  achievement: {fileID: 0}
 --- !u!1 &332832123
 GameObject:
   m_ObjectHideFlags: 0
