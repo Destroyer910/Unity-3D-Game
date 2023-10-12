@@ -8,6 +8,8 @@ public class ExternalDeathCheck : MonoBehaviour
     [SerializeField] private GameObject player;
     [SerializeField] private GameObject deathScreen;
     [SerializeField] private Timer timerScript;
+    [SerializeField] private TotalDeaths totalDeaths;
+    [SerializeField] private DeathsThisLevel deathsThisLevel;
     
     void Update()
     {
@@ -24,5 +26,7 @@ public class ExternalDeathCheck : MonoBehaviour
         deathScreen.SetActive(true);
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
+        totalDeaths.totalDeaths += 1;
+        deathsThisLevel.deathsThisLevel += 1;
     }
 }

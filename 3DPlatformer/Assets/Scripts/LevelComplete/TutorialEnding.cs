@@ -24,6 +24,8 @@ public class TutorialEnding : MonoBehaviour
         endTransition.SetActive(true);
         yield return new WaitForSeconds(2f);
         time.time = 0;
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
         spawnStuff.spawnName = "StartSpawn";
         SceneManager.LoadScene("StartMenu");
     }

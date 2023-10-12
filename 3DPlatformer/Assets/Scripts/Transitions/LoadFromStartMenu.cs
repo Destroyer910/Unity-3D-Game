@@ -17,6 +17,8 @@ public class LoadFromStartMenu : MonoBehaviour
     private IEnumerator startGameStuff()
     {
         yield return new WaitForSecondsRealtime(2f);
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

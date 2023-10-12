@@ -11,6 +11,7 @@ public class Save : MonoBehaviour
     [SerializeField] private IndividualLevelsSO level3;
     [SerializeField] private IndividualLevelsSO level4;
     [SerializeField] private IndividualLevelsSO level5;
+    [SerializeField] private TotalDeaths totalDeaths;
 
     private string directory;
     
@@ -32,7 +33,8 @@ public class Save : MonoBehaviour
             level4.levelTime.ToString() + "\n" + 
             level4.beatenLevel.ToString() + "\n" +
             level5.levelTime.ToString() + "\n" + 
-            level5.beatenLevel.ToString() 
+            level5.beatenLevel.ToString() + "\n" + 
+            totalDeaths.totalDeaths.ToString()
         );
 
     }
@@ -63,6 +65,7 @@ public class Save : MonoBehaviour
         level5.levelTime = float.Parse(lines[8]);
         level5.beatenLevel = bool.Parse(lines[9]);
         level5.findRank();
+        totalDeaths.totalDeaths = int.Parse(lines[10]);
     }
     
 }

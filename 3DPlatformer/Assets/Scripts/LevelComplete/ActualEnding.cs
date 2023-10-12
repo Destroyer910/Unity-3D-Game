@@ -8,6 +8,8 @@ public class ActualEnding : MonoBehaviour
     private Timer timeScript;
     [SerializeField] private GameObject endTransition;
     [SerializeField] private PreviousLevelSO previousLevel;
+    [SerializeField] private DeathsThisLevel deathsThisLevel;
+    [SerializeField] private IndividualLevelsSO level;
 
     void Start()
     {
@@ -31,6 +33,11 @@ public class ActualEnding : MonoBehaviour
         yield return new WaitForSeconds(2f);
         previousLevel.previousLevel = SceneManager.GetActiveScene().name;
         Time.timeScale = 1;
+        if(deathsThisLevel.deathsThisLevel == 0)
+        {
+            level.beatNoDeath = true;
+        }
+        deathsThisLevel.deathsThisLevel = 0;
         SceneManager.LoadScene("LevelEnd");
     }
 }

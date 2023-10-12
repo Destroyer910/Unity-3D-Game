@@ -4,18 +4,17 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class LevelCompleteAchievements : MonoBehaviour
+public class Die25Times : MonoBehaviour
 {
 
-    [SerializeField] private IndividualLevelsSO theLevel;
+    [SerializeField] private TotalDeaths totalDeaths;
     public Sprite achievement;
     public TextMeshProUGUI achievementText;
     public string achievementString;
 
-    // Start is called before the first frame update
     void Start()
     {
-        if(theLevel.beatenLevel)
+        if(totalDeaths.totalDeaths >= 25)
         {
             gameObject.GetComponent<Image>().sprite = achievement;
             achievementText.text = achievementString;
