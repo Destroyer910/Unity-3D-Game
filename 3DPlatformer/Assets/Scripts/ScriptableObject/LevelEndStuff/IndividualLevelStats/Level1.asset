@@ -15,6 +15,7 @@ MonoBehaviour:
   levelTime: 29.641535
   levelRank: Hermes Himself
   beatenLevel: 1
+  beatNoDeath: 0
   bronzeReq: 100
   silverReq: 85
   goldReq: 70

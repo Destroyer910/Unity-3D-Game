@@ -996,7 +996,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4157087859680557135, guid: 444a84f2416e67440a3b9c266db8b310, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4157087859680557135, guid: 444a84f2416e67440a3b9c266db8b310, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19536,7 +19536,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &551956871
 GameObject:
@@ -19569,7 +19569,7 @@ Transform:
   - {fileID: 757108725}
   - {fileID: 748853626}
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &558842928
 PrefabInstance:
@@ -21471,6 +21471,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   endTransition: {fileID: 1965799584}
   previousLevel: {fileID: 11400000, guid: f87b2248c489cf046972d815e529aaf1, type: 2}
+  deathsThisLevel: {fileID: 11400000, guid: c7e8b03c70729e147a9f720361bfcbce, type: 2}
+  level: {fileID: 11400000, guid: 70b156f6bf091f640864e103db58e925, type: 2}
 --- !u!135 &757108727
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -28299,6 +28301,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 149391577}
   deathScreen: {fileID: 793007912}
+  timerScript: {fileID: 0}
+  totalDeaths: {fileID: 0}
+  deathsThisLevel: {fileID: 0}
 --- !u!114 &1472506875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30455,6 +30460,10 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 963194228}
+    - target: {fileID: 758801259524311218, guid: f7bc3925d94bc694b9e7f4eae3791636, type: 3}
+      propertyPath: vcam
+      value: 
+      objectReference: {fileID: 136278033}
     - target: {fileID: 758801259524311222, guid: f7bc3925d94bc694b9e7f4eae3791636, type: 3}
       propertyPath: cam
       value: 
@@ -30489,7 +30498,7 @@ PrefabInstance:
       objectReference: {fileID: 147068533}
     - target: {fileID: 758801259951776654, guid: f7bc3925d94bc694b9e7f4eae3791636, type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 758801259951776654, guid: f7bc3925d94bc694b9e7f4eae3791636, type: 3}
       propertyPath: m_LocalPosition.x

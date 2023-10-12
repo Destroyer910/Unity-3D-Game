@@ -17473,6 +17473,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   endTransition: {fileID: 1965799584}
   previousLevel: {fileID: 11400000, guid: f87b2248c489cf046972d815e529aaf1, type: 2}
+  deathsThisLevel: {fileID: 11400000, guid: c7e8b03c70729e147a9f720361bfcbce, type: 2}
+  level: {fileID: 11400000, guid: eec2729d6e29f674a8e81719d8f5bcae, type: 2}
 --- !u!135 &906081586
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -22527,6 +22529,8 @@ MonoBehaviour:
   player: {fileID: 149391577}
   deathScreen: {fileID: 793007912}
   timerScript: {fileID: 0}
+  totalDeaths: {fileID: 0}
+  deathsThisLevel: {fileID: 0}
 --- !u!114 &1472506875
 MonoBehaviour:
   m_ObjectHideFlags: 0
