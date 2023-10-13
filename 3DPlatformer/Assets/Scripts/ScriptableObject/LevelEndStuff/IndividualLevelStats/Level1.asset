@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6684cbab6c7fbd48a70c6c50bb91c85, type: 3}
   m_Name: Level1
   m_EditorClassIdentifier: 
-  levelTime: 29.641535
-  levelRank: Hermes Himself
-  beatenLevel: 1
+  levelTime: 3.402823e+38
+  levelRank: 
+  beatenLevel: 0
   beatNoDeath: 0
-  bronzeReq: 100
-  silverReq: 85
-  goldReq: 70
-  platReq: 60
+  bronzeReq: 70
+  silverReq: 65
+  goldReq: 55
+  platReq: 40

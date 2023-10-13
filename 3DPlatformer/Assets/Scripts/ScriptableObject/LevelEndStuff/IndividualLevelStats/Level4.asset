@@ -18,5 +18,5 @@ MonoBehaviour:
   beatNoDeath: 0
   bronzeReq: 100
   silverReq: 85
-  goldReq: 70
+  goldReq: 75
   platReq: 60

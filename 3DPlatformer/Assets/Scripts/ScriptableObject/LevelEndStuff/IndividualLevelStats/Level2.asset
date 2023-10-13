@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Level2
   m_EditorClassIdentifier: 
   levelTime: 3.402823e+38
-  levelRank: Your Fired!
-  beatenLevel: 1
+  levelRank: 
+  beatenLevel: 0
   beatNoDeath: 0
-  bronzeReq: 100
-  silverReq: 85
-  goldReq: 70
-  platReq: 60
+  bronzeReq: 75
+  silverReq: 55
+  goldReq: 45
+  platReq: 35
